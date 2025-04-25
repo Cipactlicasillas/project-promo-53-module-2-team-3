@@ -1,0 +1,15 @@
+@use '../scss/sections/variable' as vars;
+
+.form{
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    padding: 1.2rem;
+    gap: 0.25rem;
+    margin: 2rem;
+    font-family: var
+  
+  }
+ .formulary_page{
+    background-color: var(--brand-pink-color);
+    color: var(--color-title);
+ }
