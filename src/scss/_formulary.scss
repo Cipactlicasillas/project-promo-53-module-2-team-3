@@ -12,4 +12,7 @@
  .formulary_page{
     background-color: var(--brand-pink-color);
     color: var(--brand-blue-color);
- }
+    display: flex;
+    justify-content: space-between;
+    color: green ;
+   }
