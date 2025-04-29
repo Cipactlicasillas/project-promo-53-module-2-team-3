@@ -12,7 +12,29 @@
  .formulary_page{
     background-color: var(--brand-pink-color);
     color: var(--brand-blue-color);
-    display: flex;
-    justify-content: space-between;
-    color: green ;
    }
+
+   .place1{
+    text-align: center;
+   }
+   .drink1{
+    text-align: center;
+   }
+   .food1{
+    text-align: center;
+   }
+   .preview{
+    text-align: center;
+   }
+
+   .title_checkOne{
+    text-align: center;
+   }
+
+
+   @media (width > 1024px){
+    .form_elements{
+      display: flex;
+      justify-content: space-around;
+    }
+   };
