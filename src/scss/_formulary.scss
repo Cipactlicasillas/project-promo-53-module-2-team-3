@@ -7,7 +7,7 @@
   padding: 1.2rem;
   gap: 0.25rem;
   margin: 2rem;
-  font-family: var;
+  font-family: "Playfair Display", serif;
 }
 .formulary_page {
   background-color: var(--brand-pink-color);
@@ -29,6 +29,10 @@
 
 .title_checkOne {
   text-align: center;
+  font-family: "Lobster Two", sans-serif;
+}
+.form_subtitle{
+  font-family:  "Playfair Display", serif;
 }
 
 @media (width > 1024px){
@@ -36,4 +40,4 @@
     display: flex;
     justify-content: space-around;
   }
-};
+}

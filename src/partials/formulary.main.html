@@ -1,23 +1,37 @@
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    src="https://kit.fontawesome.com/66349fc88a.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
   <link rel="stylesheet" href="../scss/_formulary.scss" />
 </head>
 <main class="formulary_page">
   <section class="form_elements">
     <form action="" method="post">
-      <p>Fill</p>
+      <p class="form_subtitle">Fill the form. <br>
+        It's easy.
+      </p>
       <fieldset class="form">
         <legend>About you</legend>
 
-        <label for="insert_photo">Add your photo</label>
+        <label for="insert_photo">Add your photo:</label>
         <input id="insert_photo" type="file" name="insert_photo" />
 
-        <label for="email">Email </label>
+        <label for="email">Email: </label>
         <input id="email" type="email" />
 
-        <label for="name">Name</label>
+        <label for="name">Name:</label>
         <input id="name" type="text" name="name" />
 
-        <label for="age">Age</label>
+        <label for="age">Age:</label>
         <input id="age" type="text" name="age" />
 
         <label for="quality">One quality that defines you.</label>
@@ -25,7 +39,7 @@
       </fieldset>
 
       <h3 class="title_checkOne">Check one choice to meet you better!</h3>
-      <p>Choose</p>
+      <p class="form_subtitle">Choose your preferences:</p>
       <fieldset class="form">
         <legend>What place do you prefer?</legend>
         <div class="place1">
@@ -53,10 +67,10 @@
           <label for="vegan"> Vegan</label>
         </div>
       </fieldset>
-      <p>Share!</p>
+      <p class="form_subtitle">Share!</p>
     </form>
     <aside class="preview">
-      <p>Preview your profile!</p>
+      <p class="title_checkOne">Preview your profile!</p>
       <img src="https://placehold.co/175x200" alt="image" />
     </aside>
   </section>
