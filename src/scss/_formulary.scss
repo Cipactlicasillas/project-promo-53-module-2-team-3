@@ -30,35 +30,3 @@
   text-align: center;
 }
 
-@media (width > 1024px) {
-  .form_elements {
-    display: flex;
-    justify-content: space-around;
-  }
- .formulary_page{
-    background-color: var(--brand-pink-color);
-    color: var(--brand-blue-color);
-    
-   }
-
-   .place1{
-    text-align: center;
-   }
-   .drink1{
-    text-align: center;
-   }
-   .food1{
-    text-align: center;
-   }
-   .preview{
-    display: block;
-    align-items: center;  
-    justify-items: center;
-    margin-block: 1rem;
-    
-   }
-
-   .title_checkOne{
-    text-align: center;
-   }
-   };
