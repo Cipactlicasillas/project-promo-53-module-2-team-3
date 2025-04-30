@@ -12,6 +12,7 @@
  .formulary_page{
     background-color: var(--brand-pink-color);
     color: var(--brand-blue-color);
+    
    }
 
    .place1{
@@ -24,7 +25,11 @@
     text-align: center;
    }
    .preview{
-    text-align: center;
+    display: block;
+    align-items: center;  
+    justify-items: center;
+    margin-block: 1rem;
+    
    }
 
    .title_checkOne{
