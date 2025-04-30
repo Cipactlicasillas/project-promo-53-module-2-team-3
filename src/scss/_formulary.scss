@@ -15,7 +15,7 @@
 }
 
 .place1 {
-  text-align: center;
+  text-align: center;  
 }
 .drink1 {
   text-align: center;
@@ -33,11 +33,5 @@
 }
 .form_subtitle{
   font-family:  "Playfair Display", serif;
-}
-
-@media (width > 1024px){
-  .form_elements{
-    display: flex;
-    justify-content: space-around;
-  }
+  font-weight: bold;
 }
