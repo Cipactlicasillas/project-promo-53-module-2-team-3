@@ -2,8 +2,10 @@
   <link rel="stylesheet" href="../scss/_formulary.scss" />
 </head>
 <main class="formulary_page">
+  
   <section class="form_elements">
     <form action="" method="post">
+      <p>Fill</p>
       <fieldset class="form">
         <legend>About you</legend>
 
@@ -22,10 +24,12 @@
         <label for="quality">One quality that defines you.</label>
         <input id="quality" type="text" name="quality" />
       </fieldset>
-      <h3>Check one choice to meet you better!</h3>
+    
+      <h3 class="title_checkOne">Check one choice to meet you better!</h3>
+      <p>Choose</p>
       <fieldset class="form">
         <legend>What place do you prefer?</legend>
-        <div>
+        <div class="place1">
           <input type="radio" name="place" id="beach" value="p1" />
           <label for="beach">Beach</label>
           <input type="radio" name="place" id="mountain" value="p2" />
@@ -34,7 +38,7 @@
       </fieldset>
       <fieldset class="form">
         <legend>What drink do you prefer?</legend>
-        <div>
+        <div class="drink1">
           <input type="radio" name="drink" id="beer" value="p1" />
           <label for="beer">Beer</label>
           <input type="radio" name="drink" id="wine" value="p2" />
@@ -43,14 +47,18 @@
       </fieldset>
       <fieldset class="form">
         <legend>What food do you prefer?</legend>
-        <div>
+        <div class="food1">
           <input type="radio" name="food" id="meat" value="p1" />
           <label for="meat">Meat</label>
           <input type="radio" name="food" id="vegan" value="p2" />
           <label for="vegan"> Vegan</label>
         </div>
       </fieldset>
+      <p>Share!</p>
     </form>
-    <article class="preview">Preview</article>
+    <aside class="preview">
+      <p>Preview your profile!</p>
+      <img src="https://placehold.co/175x200" alt="image" />
+    </aside>
   </section>
 </main>
