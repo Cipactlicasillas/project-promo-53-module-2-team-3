@@ -13,3 +13,14 @@ footer {
   text-align: justify;
   width: 3rem;
 }
+
+.rrss_link {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 32px;
+  color: #5d50c6;
+  margin-top: 64px;
+  margin-bottom: 32px;
+}
