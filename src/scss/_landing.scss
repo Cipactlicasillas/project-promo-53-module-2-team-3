@@ -46,6 +46,7 @@ justify-content: space;
     color: rgba(9, 91, 116, 0.966);
     max-width: 20em;
     padding-bottom: 2em;
+    padding-inline: 1.5em;
     
   }
 
@@ -56,9 +57,19 @@ justify-content: space;
     padding-inline:3em;
   }
 
-  .conticon div img{
+  .img1{
     width: 30%;
+    border-radius: 20%;
+    object-fit: cover;
    
   }
-
-  
+  .img2{
+    width: 35%;
+    border-radius: 20%;
+    object-fit: cover;
+  }
+    .img3{
+      width: 70%;
+      border-radius: 20%;
+      object-fit: cover;
+    }
