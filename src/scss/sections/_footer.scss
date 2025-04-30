@@ -1,26 +1,45 @@
 footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-inline: auto;
   background-color: #bb2a2a;
   color: white;
   width: 100%;
-  padding: 2px;
+  padding: 4px;
+  margin-bottom: 0;
 }
-.logofooter {
+
+.vm {
   display: flex;
   align-items: center;
-  text-align: justify;
-  width: 3rem;
+  justify-content: flex-start;
+  color: rgb(250, 215, 215);
+  font-size: 0.75rem;
+}
+
+.rrss {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .rrss_link {
-  width: 100%;
+  width: 2rem;
+  height: 2rem;
   display: flex;
-  flex-direction: row;
-  justify-content: left;
-  gap: 32px;
-  color: #5d50c6;
-  margin-top: 64px;
-  margin-bottom: 32px;
+  justify-content: center;
+  align-items: center;
+  color: rgb(250, 215, 215);
+}
+
+.logofooter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
 }
