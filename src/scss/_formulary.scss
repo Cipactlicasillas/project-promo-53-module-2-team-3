@@ -31,9 +31,9 @@
   text-align: center;
 }
 
-@media (width > 1024px) {
-  .form_elements {
+@media (width > 1024px){
+  .form_elements{
     display: flex;
     justify-content: space-around;
   }
-}
+};
