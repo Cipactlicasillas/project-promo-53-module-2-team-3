@@ -4,19 +4,27 @@
 .form {
   display: grid;
   grid-template-columns: repeat(1, 2fr);
-  padding: 1.2rem;
+  padding: 1rem;
   gap: 0.25rem;
-  margin: 2rem;
+  margin: 1rem;
   font-family: "Playfair Display", serif;
 }
 .form_page {
+  width: 100vw;
   background-color: var(--brand-pink-color);
   color: var(--brand-blue-color);
   font-family: "Playfair Display", serif;
+  text-align: center;
+}
+.forms_sections {
+  display: block;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
 }
 
 .place1 {
-  text-align: center;  
+  text-align: center;
 }
 .drink1 {
   text-align: center;
@@ -32,10 +40,16 @@
   text-align: center;
   font-family: "Lobster Two", sans-serif;
 }
-.btnsshow{
-  padding-inline: 2rem;
-  padding-block: 0.5rem;
-  color:var(--brand-blue-color);
+.btnsshow {
+  padding: 0.5rem;
+
+  color: var(--brand-blue-color);
   border-radius: 0.5rem;
   border-color: rgb(187, 42, 42);
+}
+@media (width > 1024px) {
+  .form_page {
+    display: flex;
+    justify-content: space-around;
+  }
 }

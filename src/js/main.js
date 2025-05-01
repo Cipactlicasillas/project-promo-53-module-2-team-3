@@ -1,7 +1,5 @@
 "use strict";
 
-console.log(">> Ready :)");
-
 const btnShow1 = document.querySelector(".js_btnshow1");
 const btnShow2 = document.querySelector(".js_btnshow2");
 const btnShow3 = document.querySelector(".js_btnshow3");
@@ -10,6 +8,7 @@ const jsformMain = document.querySelector(".js_form_main");
 
 const jsform1 = document.querySelector(".js_form1");
 const jsform2 = document.querySelector(".js_form2");
+const jsform3 = document.querySelector(".js_form3");
 
 btnShow1.addEventListener("click", () => {
   const contentForm1 = `<form action="" method="post">
@@ -35,8 +34,8 @@ btnShow1.addEventListener("click", () => {
   jsform1.innerHTML = contentForm1;
 });
 
-btnShow2.addEventListener('click' , () => {
-const contentForm2 =`<fieldset class="form">
+btnShow2.addEventListener("click", () => {
+  const contentForm2 = `<h3 class="title_checkOne">Check one choice to meet you better!</h3><fieldset class="form">
       <legend>What place do you prefer?</legend>
       <div class="place1">
         <input type="radio" name="place" id="beach" value="p1" />
@@ -63,5 +62,12 @@ const contentForm2 =`<fieldset class="form">
         <label for="vegan"> Vegan</label>
       </div>
     </fieldset>`;
-    jsform2.innerHTML = contentForm2;
-})
+  jsform2.innerHTML = contentForm2;
+});
+
+btnShow3.addEventListener("click", () => {
+  const contentForm3 = `<p>BOTON CREAR TARJETA</p>
+      <br />
+      <p>La tarjeta ha sido creada</p>`;
+  jsform3.innerHTML = contentForm3;
+});
