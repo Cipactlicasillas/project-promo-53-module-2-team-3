@@ -42,10 +42,11 @@
 }
 .btnsshow {
   padding: 0.5rem;
+  font-family: "Lobster Two", sans-serif;
 
   color: var(--brand-blue-color);
   border-radius: 0.5rem;
-  border-color: rgb(187, 42, 42);
+  border: solid var(--brand-blue-color)
 }
 @media (width > 1024px) {
   .form_page {
