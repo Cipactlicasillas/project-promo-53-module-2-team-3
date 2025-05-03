@@ -1,6 +1,20 @@
-@use "../scss/sections/variable" as vars;
-@use "./sections/footer";
+@use "./sections/variable" as vars;
 
+.form_page {
+  width: 100%;
+  height: 100%;
+  background-color: var(--brand-pink-color);
+  color: var(--brand-blue-color);
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+
+.forms_sections {
+  display: block;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
 .form {
   display: grid;
   grid-template-columns: repeat(1, 2fr);
@@ -8,19 +22,6 @@
   gap: 0.25rem;
   margin: 0.5rem;
   font-family: "Playfair Display", serif;
-}
-.form_page {
-  width: 100vw;
-  background-color: var(--brand-pink-color);
-  color: var(--brand-blue-color);
-  font-family: "Playfair Display", serif;
-  text-align: center;
-}
-.forms_sections {
-  display: block;
-  align-items: center;
-  padding: 1rem;
-  gap: 1rem;
 }
 
 .place1 {
@@ -45,19 +46,21 @@
   font-family: "Lobster Two", sans-serif;
   color: var(--brand-blue-color);
   border-radius: 0.5rem;
-  border: solid var(--brand-blue-color)
+  border: solid var(--brand-blue-color);
 }
-.btnsshowstyle{
+.btnsshowstyle {
   padding: 0.5rem;
   font-family: "Lobster Two", sans-serif;
   color: rgb(187, 42, 42);
   border-radius: 0.5rem;
-  border: solid rgb(187, 42, 42)
+  border: solid rgb(187, 42, 42);
 }
 
-@media (width > 1024px) {
+@media (width > 1020px) {
   .form_page {
     display: flex;
     justify-content: space-around;
+    width: 100%;
+    height: 100%;
   }
 }
