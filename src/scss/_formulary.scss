@@ -6,7 +6,7 @@
   grid-template-columns: repeat(1, 2fr);
   padding: 1rem;
   gap: 0.25rem;
-  margin: 1rem;
+  margin: 0.5rem;
   font-family: "Playfair Display", serif;
 }
 .form_page {
@@ -43,11 +43,18 @@
 .btnsshow {
   padding: 0.5rem;
   font-family: "Lobster Two", sans-serif;
-
   color: var(--brand-blue-color);
   border-radius: 0.5rem;
   border: solid var(--brand-blue-color)
 }
+.btnsshowstyle{
+  padding: 0.5rem;
+  font-family: "Lobster Two", sans-serif;
+  color: rgb(187, 42, 42);
+  border-radius: 0.5rem;
+  border: solid rgb(187, 42, 42)
+}
+
 @media (width > 1024px) {
   .form_page {
     display: flex;

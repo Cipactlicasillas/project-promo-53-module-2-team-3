@@ -68,6 +68,8 @@ btnShow2.addEventListener("click", () => {
 btnShow3.addEventListener("click", () => {
   const contentForm3 = `<p>BOTON CREAR TARJETA</p>
       <br />
-      <p>La tarjeta ha sido creada</p>`;
+      <a>La tarjeta ha sido creada</a>`;
   jsform3.innerHTML = contentForm3;
 });
+
+

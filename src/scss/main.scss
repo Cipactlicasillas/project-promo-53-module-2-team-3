@@ -1,14 +1,19 @@
-@use "./sections/reset";
-@use "./sections/variable";
-@use "./sections/footer";
+@use './sections/reset';
+@use './sections/variable';
+@use './sections/footer';
+@use './landing';
+@use './formulary';
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-:root {
+/*:root {
   font-family: "Lobster Two", sans-serif;
   font-weight: 400;
   font-style: normal;
+}*/
+.container{
+min-height: 100vh;
 }
