@@ -19,16 +19,16 @@ btnShow1.addEventListener("click", () => {
       <input id="insert_photo" type="file" name="insert_photo" />
 
       <label for="email">Email: </label>
-      <input id="email" type="email" />
+      <input id="email" type="email" placeholder="Enter your email addres"  />
 
       <label for="name">Name:</label>
-      <input id="name" type="text" name="name" />
+      <input id="name" type="text" name="name" placeholder="Enter your name" />
 
       <label for="age">Age:</label>
-      <input id="age" type="text" name="age" />
+      <input id="age" type="text" name="age" placeholder="Enter your age" />
 
       <label for="quality">One quality that defines you.</label>
-      <input id="quality" type="text" name="quality" />
+      <input id="quality" type="text" name="quality"  placeholder="Enter one quality" />
     </fieldset>
   </form>`;
   jsform1.innerHTML = contentForm1;
