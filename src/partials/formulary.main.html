@@ -1,64 +1,50 @@
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    src="https://kit.fontawesome.com/66349fc88a.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+    integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY="
+    crossorigin="anonymous"
+  />
   <link rel="stylesheet" href="../scss/_formulary.scss" />
 </head>
-<main class="formulary_page">
-  
-  <section class="form_elements">
-    <form action="" method="post">
-      <p>Fill</p>
-      <fieldset class="form">
-        <legend>About you</legend>
+<main class="js_form_main form_page">
+  <section class="forms_sections">
+    <div>
+      <p class="js_btnshow1 btnsshow">Fill the form. It's easy!</p>
+    </div>
 
-        <label for="insert_photo">Add your photo</label>
-        <input id="insert_photo" type="file" name="insert_photo" />
+    <div class="js_form1"></div>
 
-        <label for="email">Email </label>
-        <input id="email" type="email" />
+    <div>
+      <p class="js_btnshow2 btnsshow">Choose your preferences:</p>
+    </div>
 
-        <label for="name">Name</label>
-        <input id="name" type="text" name="name" />
+    <div class="js_form2"></div>
 
-        <label for="age">Age</label>
-        <input id="age" type="text" name="age" />
+    <div>
+      <p class="js_btnshow3 btnsshow">Share!</p>
+    </div>
 
-        <label for="quality">One quality that defines you.</label>
-        <input id="quality" type="text" name="quality" />
-      </fieldset>
-    
-      <h3 class="title_checkOne">Check one choice to meet you better!</h3>
-      <p>Choose</p>
-      <fieldset class="form">
-        <legend>What place do you prefer?</legend>
-        <div class="place1">
-          <input type="radio" name="place" id="beach" value="p1" />
-          <label for="beach">Beach</label>
-          <input type="radio" name="place" id="mountain" value="p2" />
-          <label for="mountain">Mountain</label>
-        </div>
-      </fieldset>
-      <fieldset class="form">
-        <legend>What drink do you prefer?</legend>
-        <div class="drink1">
-          <input type="radio" name="drink" id="beer" value="p1" />
-          <label for="beer">Beer</label>
-          <input type="radio" name="drink" id="wine" value="p2" />
-          <label for="wine">Wine</label>
-        </div>
-      </fieldset>
-      <fieldset class="form">
-        <legend>What food do you prefer?</legend>
-        <div class="food1">
-          <input type="radio" name="food" id="meat" value="p1" />
-          <label for="meat">Meat</label>
-          <input type="radio" name="food" id="vegan" value="p2" />
-          <label for="vegan"> Vegan</label>
-        </div>
-      </fieldset>
-      <p>Share!</p>
-    </form>
-    <aside class="preview">
-      <p>Preview your profile!</p>
-      <img src="https://placehold.co/175x200" alt="image" />
-    </aside>
+    <div class="js_form3">
+      <!--<p>BOTON CREAR TARJETA</p>
+      <br />
+      <p>La tarjeta ha sido creada</p>-->
+    </div>
   </section>
+  <aside class="preview">
+    <h3 class="title_checkOne">Preview your profile!</h3>
+    <img src="https://placehold.co/175x200" alt="image" />
+  </aside>
 </main>
+<script src="../js/main.js"></script>

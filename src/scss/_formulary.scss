@@ -1,16 +1,28 @@
-@use "../scss/sections/variable" as vars;
+@use "./sections/variable" as vars;
 
+.form_page {
+  width: 100%;
+  height: 100%;
+  background-color: var(--brand-pink-color);
+  color: var(--brand-blue-color);
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+
+.forms_sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 0.6rem;
+}
 .form {
   display: grid;
   grid-template-columns: repeat(1, 2fr);
-  padding: 1.2rem;
-  gap: 0.25rem;
-  margin: 2rem;
-  font-family: var;
-}
-.formulary_page {
-  background-color: var(--brand-pink-color);
-  color: var(--brand-blue-color);
+  padding: 1rem;
+  gap: 0.5rem;
+  margin: 0.5rem;
+  font-family: "Playfair Display", serif;
 }
 
 .place1 {
@@ -28,12 +40,31 @@
 
 .title_checkOne {
   text-align: center;
+  font-family: "Lobster Two", sans-serif;
+  padding: 0.5rem;
+}
+.btnsshow {
+  padding: 0.5rem;
+  font-family: "Lobster Two", sans-serif;
+  color: var(--brand-blue-color);
+  border-radius: 0.5rem;
+  border: solid var(--brand-blue-color);
+}
+.btnsshowstyle {
+  padding: 0.5rem;
+  font-family: "Lobster Two", sans-serif;
+  color: rgb(187, 42, 42);
+  border-radius: 0.5rem;
+  border: solid rgb(187, 42, 42);
 }
 
 @media (width > 1024px) {
-  .form_elements {
+  .form_page {
     display: flex;
     justify-content: space-around;
+    width: 100%;
+    min-height: 90vh;
+  }
   }
   
  .formulary_page{
@@ -69,4 +100,4 @@
       display: flex;
       justify-content: space-around;
     }
-   };
+   }
