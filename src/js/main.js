@@ -48,7 +48,7 @@ btnShow2.addEventListener("click", () => {
       <legend>What drink do you prefer?</legend>
       <div class="drink1">
         <input type="radio" name="drink" id="beer" value="p1" />
-        <label for="beer">Beer</label>
+        <label for="beer">Beer   </label>
         <input type="radio" name="drink" id="wine" value="p2" />
         <label for="wine">Wine</label>
       </div>
@@ -71,5 +71,3 @@ btnShow3.addEventListener("click", () => {
       <a>La tarjeta ha sido creada</a>`;
   jsform3.innerHTML = contentForm3;
 });
-
-
