@@ -1,5 +1,7 @@
 "use strict";
 
+//QUERY SELECTOR BOTONES DE FORMULARIO
+
 const btnShow1 = document.querySelector(".js_btnshow1");
 const btnShow2 = document.querySelector(".js_btnshow2");
 const btnShow3 = document.querySelector(".js_btnshow3");
@@ -10,6 +12,19 @@ const jsform1 = document.querySelector(".js_form1");
 const jsform2 = document.querySelector(".js_form2");
 const jsform3 = document.querySelector(".js_form3");
 
+//FUNCIONES
+
+function data (){
+  const photo = document.getElementById("insert_photo").value;
+  const email = document.getElementById("email").value;
+  const name = document.getElementById("name").value;
+  const age = document.getElementById("age").value;
+}
+
+
+
+
+//EVENTOS
 btnShow1.addEventListener("click", () => {
   const contentForm1 = `<form action="" method="post">
     <fieldset class="form">
@@ -48,7 +63,7 @@ btnShow2.addEventListener("click", () => {
       <legend>What drink do you prefer?</legend>
       <div class="drink1">
         <input type="radio" name="drink" id="beer" value="p1" />
-        <label for="beer">Beer</label>
+        <label for="beer">Beer   </label>
         <input type="radio" name="drink" id="wine" value="p2" />
         <label for="wine">Wine</label>
       </div>
@@ -73,3 +88,4 @@ btnShow3.addEventListener("click", () => {
 });
 
 
+//
