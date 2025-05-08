@@ -1,4 +1,5 @@
 <head>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -17,12 +18,13 @@
     crossorigin="anonymous"
   />
   <link rel="stylesheet" href="../scss/_formulary.scss" />
+
 </head>
 <main class="js_form_main form_page">
   <section class="forms_sections">
-    <div>
+    <div class="js_forms"> 
       <p class="js_btnshow1 btnsshow">Fill the form. It's easy!</p>
-      <form action="" method="post">
+      <form action="" method="post" class="hidden1 formhidden">
         <fieldset class="form">
           <legend>About you</legend>
     
@@ -30,7 +32,7 @@
           <input id="insert_photo" type="file" name="insert_photo" />
     
           <label for="email">Email: </label>
-          <input id="email" type="email" placeholder="Enter your email addres"  />
+          <input id="email" type="email" placeholder="Enter your email address"  />
     
           <label for="name">Name:</label>
           <input id="name" type="text" name="name" placeholder="Enter your name" />
@@ -44,11 +46,16 @@
       </form>
     </div>
 
-    <div class="js_form1"></div>
+    <article>
 
-    <div>
+     <div>
       <p class="js_btnshow2 btnsshow">Choose your preferences:</p>
-      <h3 class="title_checkOne">Check one choice to meet you better!</h3><fieldset class="form">
+     </div>
+     <form class="hidden2 formhidden">
+
+      <h3 class="title_checkOne">Check one choice to meet you better!</h3>
+     
+      <fieldset class="form">
         <legend>What place do you prefer?</legend>
         <div class="place1">
           <input type="radio" name="place" id="beach" value="p1" />
@@ -75,20 +82,19 @@
           <label for="vegan"> Vegan</label>
         </div>
       </fieldset>
-    </div>
-
-    <div class="js_form2"></div>
-
-    <div>
+  </form>
+ 
+    <article >
       <p class="js_btnshow3 btnsshow">Share!</p>
-    </div>
+      <div class="hidden3 formhidden">
 
-    <div class="js_form3">
       <p>BOTON CREAR TARJETA</p>
       <br />
       <a>La tarjeta ha sido creada</a>
-    </div>
+      </div>
+    </article>
   </section>
+
   <aside class="preview">
     <h3 class="title_checkOne">Preview your profile!</h3>
     <img src="https://placehold.co/175x200" alt="image" />

@@ -1,34 +1,26 @@
 "use strict";
 
-//QUERY SELECTOR BOTONES DE FORMULARIO
+const btnForm1 = document.querySelector(".js_btnshow1");
+const btnForm2 = document.querySelector(".js_btnshow2");
+const btnForm3 = document.querySelector(".js_btnshow3");
+const formHdn1 = document.querySelector(".hidden1");
+const formHdn2 = document.querySelector(".hidden2");
+const formHdn3 = document.querySelector(".hidden3");
 
-const btnShow1 = document.querySelector(".js_btnshow1");
-const btnShow2 = document.querySelector(".js_btnshow2");
-const btnShow3 = document.querySelector(".js_btnshow3");
+btnForm1.addEventListener("click", (ev) => {
+  ev.preventDefault();
 
-const jsformMain = document.querySelector(".js_form_main");
+  formHdn1.classList.toggle("formhidden");
+});
 
-const jsform1 = document.querySelector(".js_form1");
-const jsform2 = document.querySelector(".js_form2");
-const jsform3 = document.querySelector(".js_form3");
+btnForm2.addEventListener("click", (ev) => {
+  ev.preventDefault();
 
-const result = document.querySelector('.result');
+  formHdn2.classList.toggle("formhidden");
+});
 
-//FUNCIONES
+btnForm3.addEventListener("click", (ev) => {
+  ev.preventDefault();
 
-function data (){
-  const photo = document.getElementById("insert_photo").value;
-  const email = document.getElementById("email").value;
-  const name = document.getElementById("name").value;
-  const age = document.getElementById("age").value;
-
-return data();
-
-};
-
-
-
-
-
-
-//EVENTOS
+  formHdn3.classList.toggle("formhidden");
+});
