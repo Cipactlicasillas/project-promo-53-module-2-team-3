@@ -22,12 +22,59 @@
   <section class="forms_sections">
     <div>
       <p class="js_btnshow1 btnsshow">Fill the form. It's easy!</p>
+      <form action="" method="post">
+        <fieldset class="form">
+          <legend>About you</legend>
+    
+          <label for="insert_photo">Add your photo:</label>
+          <input id="insert_photo" type="file" name="insert_photo" />
+    
+          <label for="email">Email: </label>
+          <input id="email" type="email" placeholder="Enter your email addres"  />
+    
+          <label for="name">Name:</label>
+          <input id="name" type="text" name="name" placeholder="Enter your name" />
+    
+          <label for="age">Age:</label>
+          <input id="age" type="text" name="age" placeholder="Enter your age" />
+    
+          <label for="quality">One quality that defines you.</label>
+          <input id="quality" type="text" name="quality"  placeholder="Enter one quality" />
+        </fieldset>
+      </form>
     </div>
 
     <div class="js_form1"></div>
 
     <div>
       <p class="js_btnshow2 btnsshow">Choose your preferences:</p>
+      <h3 class="title_checkOne">Check one choice to meet you better!</h3><fieldset class="form">
+        <legend>What place do you prefer?</legend>
+        <div class="place1">
+          <input type="radio" name="place" id="beach" value="p1" />
+          <label for="beach">Beach</label>
+          <input type="radio" name="place" id="mountain" value="p2" />
+          <label for="mountain">Mountain</label>
+        </div>
+      </fieldset>
+      <fieldset class="form">
+        <legend>What drink do you prefer?</legend>
+        <div class="drink1">
+          <input type="radio" name="drink" id="beer" value="p1" />
+          <label for="beer">Beer   </label>
+          <input type="radio" name="drink" id="wine" value="p2" />
+          <label for="wine">Wine</label>
+        </div>
+      </fieldset>
+      <fieldset class="form">
+        <legend>What food do you prefer?</legend>
+        <div class="food1">
+          <input type="radio" name="food" id="meat" value="p1" />
+          <label for="meat">Meat</label>
+          <input type="radio" name="food" id="vegan" value="p2" />
+          <label for="vegan"> Vegan</label>
+        </div>
+      </fieldset>
     </div>
 
     <div class="js_form2"></div>
@@ -37,9 +84,9 @@
     </div>
 
     <div class="js_form3">
-      <!--<p>BOTON CREAR TARJETA</p>
+      <p>BOTON CREAR TARJETA</p>
       <br />
-      <p>La tarjeta ha sido creada</p>-->
+      <a>La tarjeta ha sido creada</a>
     </div>
   </section>
   <aside class="preview">
