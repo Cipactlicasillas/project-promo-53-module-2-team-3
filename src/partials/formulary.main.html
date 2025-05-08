@@ -1,5 +1,4 @@
 <head>
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -18,79 +17,86 @@
     crossorigin="anonymous"
   />
   <link rel="stylesheet" href="../scss/_formulary.scss" />
-
 </head>
 <main class="js_form_main form_page">
   <section class="forms_sections">
-    <div class="js_forms"> 
+    <div>
       <p class="js_btnshow1 btnsshow">Fill the form. It's easy!</p>
-      <form action="" method="post" class="hidden1 formhidden">
-        <fieldset class="form">
-          <legend>About you</legend>
-    
-          <label for="insert_photo">Add your photo:</label>
-          <input id="insert_photo" type="file" name="insert_photo" />
-    
-          <label for="email">Email: </label>
-          <input id="email" type="email" placeholder="Enter your email address"  />
-    
-          <label for="name">Name:</label>
-          <input id="name" type="text" name="name" placeholder="Enter your name" />
-    
-          <label for="age">Age:</label>
-          <input id="age" type="text" name="age" placeholder="Enter your age" />
-    
-          <label for="quality">One quality that defines you.</label>
-          <input id="quality" type="text" name="quality"  placeholder="Enter one quality" />
-        </fieldset>
-      </form>
     </div>
+    <form action="" method="post" class="js_hidden1 formhidden">
+      <fieldset class="form">
+        <legend>About you</legend>
+
+        <label for="insert_photo">Add your photo:</label>
+        <input id="insert_photo" type="file" name="insert_photo" />
+
+        <label for="email">Email: </label>
+        <input id="email" type="email" placeholder="Enter your email address" />
+
+        <label for="name">Name:</label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+        />
+
+        <label for="age">Age:</label>
+        <input id="age" type="text" name="age" placeholder="Enter your age" />
+
+        <label for="quality">One quality that defines you.</label>
+        <input
+          id="quality"
+          type="text"
+          name="quality"
+          placeholder="Enter one quality"
+        />
+      </fieldset>
+    </form>
 
     <article>
+      <div>
+        <p class="js_btnshow2 btnsshow">Choose your preferences:</p>
+      </div>
+      <form class="js_hidden2 formhidden">
+        <h3 class="title_checkOne">Check one choice to meet you better!</h3>
 
-     <div>
-      <p class="js_btnshow2 btnsshow">Choose your preferences:</p>
-     </div>
-     <form class="hidden2 formhidden">
+        <fieldset class="form">
+          <legend>What place do you prefer?</legend>
+          <div class="place1">
+            <input type="radio" name="place" id="beach" value="p1" />
+            <label for="beach">Beach</label>
+            <input type="radio" name="place" id="mountain" value="p2" />
+            <label for="mountain">Mountain</label>
+          </div>
+        </fieldset>
+        <fieldset class="form">
+          <legend>What drink do you prefer?</legend>
+          <div class="drink1">
+            <input type="radio" name="drink" id="beer" value="p1" />
+            <label for="beer">Beer </label>
+            <input type="radio" name="drink" id="wine" value="p2" />
+            <label for="wine">Wine</label>
+          </div>
+        </fieldset>
+        <fieldset class="form">
+          <legend>What food do you prefer?</legend>
+          <div class="food1">
+            <input type="radio" name="food" id="meat" value="p1" />
+            <label for="meat">Meat</label>
+            <input type="radio" name="food" id="vegan" value="p2" />
+            <label for="vegan"> Vegan</label>
+          </div>
+        </fieldset>
+      </form>
+    </article>
 
-      <h3 class="title_checkOne">Check one choice to meet you better!</h3>
-     
-      <fieldset class="form">
-        <legend>What place do you prefer?</legend>
-        <div class="place1">
-          <input type="radio" name="place" id="beach" value="p1" />
-          <label for="beach">Beach</label>
-          <input type="radio" name="place" id="mountain" value="p2" />
-          <label for="mountain">Mountain</label>
-        </div>
-      </fieldset>
-      <fieldset class="form">
-        <legend>What drink do you prefer?</legend>
-        <div class="drink1">
-          <input type="radio" name="drink" id="beer" value="p1" />
-          <label for="beer">Beer   </label>
-          <input type="radio" name="drink" id="wine" value="p2" />
-          <label for="wine">Wine</label>
-        </div>
-      </fieldset>
-      <fieldset class="form">
-        <legend>What food do you prefer?</legend>
-        <div class="food1">
-          <input type="radio" name="food" id="meat" value="p1" />
-          <label for="meat">Meat</label>
-          <input type="radio" name="food" id="vegan" value="p2" />
-          <label for="vegan"> Vegan</label>
-        </div>
-      </fieldset>
-  </form>
- 
-    <article >
+    <article>
       <p class="js_btnshow3 btnsshow">Share!</p>
-      <div class="hidden3 formhidden">
-
-      <p>BOTON CREAR TARJETA</p>
-      <br />
-      <a>La tarjeta ha sido creada</a>
+      <div class="js_hidden3 formhidden">
+        <p>BOTON CREAR TARJETA</p>
+        <br />
+        <a>La tarjeta ha sido creada</a>
       </div>
     </article>
   </section>
