@@ -101,3 +101,105 @@
     justify-content: space-around;
   }
 }
+//style preview card
+
+.card{
+  background: rgb(252, 252, 252);
+  margin:0.1em;
+  border: 12px solid;
+  border-image: linear-gradient(to right, #ff6b6b, #fbc531) 1;
+  background: linear-gradient(145deg, #ffeef2, #f3f8fc); /* rosa pálido y azul muy suave */
+  box-shadow: 0 4px 12px rgba(0, 63, 105, 0.1); /* sombra azul discreta */
+  gap: 5px;
+  height: 40vh;
+ font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+    display: grid;
+  grid-template-areas: "quality quality"
+                        "photo datas"
+                        "chose chose";
+                      
+    grid-template-rows: 30% 50% 10%;
+   
+ 
+
+}
+.preview-quality{
+  margin-top: 0.2em;
+ margin-right: 25px;
+ font-size:10px;
+ color:black;
+   padding: 0.3em;
+ background: rgba(255, 255, 255, 0.6);
+backdrop-filter: blur(8px);
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  grid-area: quality;
+ background: linear-gradient(145deg, #ffeef2, #f3f8fc);
+   background: linear-gradient(145deg, #fff0f6, #f0f8ff);
+  border: 1px solid rgba(255, 105, 135, 0.4); /* rosa más presente */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+
+
+  
+
+  
+}
+
+.content-datas{
+  padding-top: 0.7em;
+  margin-right: 0.5em;
+  color:black;
+  grid-column: 2 / 3;
+  grid-area:datas;
+  background-color: #fbc531;
+ 
+
+}
+
+.preview-age{
+  font-size: 16px;
+  
+
+}
+.preview-name{
+   font-size: 14px;
+}
+
+.preview-email{
+  font-size: 10px;
+   
+}
+
+
+
+.preview-photo {
+  width:80%;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  margin-left: 1em;
+  grid-area:photo;
+  background: rgba(255, 255, 255, 0.6);
+backdrop-filter: blur(8px);
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+border-radius: 12px;
+
+}
+
+
+.preview-choose{
+  display:flex;
+  justify-content: space-around;
+  font-size:12px;
+ grid-area:chose;
+background: linear-gradient(145deg, #ffeef2, #f3f8fc); /* fondo suave */
+  border: 1px solid rgba(0, 63, 105, 0.08); /* borde azul muy sutil y translúcido */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* sombra suave para profundidad */
+  border-radius: 1rem;
+  margin-inline: 40px;
+ 
+  
+
+  
+}
+
