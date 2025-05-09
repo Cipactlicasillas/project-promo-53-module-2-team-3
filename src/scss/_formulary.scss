@@ -25,6 +25,11 @@
   font-family: "Playfair Display", serif;
 }
 
+.formhidden {
+  visibility: hidden;
+  display: none;
+}
+
 .place1 {
   text-align: center;
 }
@@ -90,7 +95,8 @@
     width: 100%;
     min-height: 90vh;
   }
-  .form_elements {
+
+  .form_sections {
     display: flex;
     justify-content: space-around;
   }
