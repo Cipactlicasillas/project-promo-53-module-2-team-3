@@ -15,13 +15,15 @@ const jsform3 = document.querySelector(".js_form3");
 //FUNCIONES
 
 function data (){
-  const photo = document.getElementById("insert_photo").value;
-  const email = document.getElementById("email").value;
-  const name = document.getElementById("name").value;
-  const age = document.getElementById("age").value;
+  const photo = document.querySelector(".js-photo").value;
+  const email = document.querySelector(".js-email").value;
+  const name = document.getElementById(".js-name").value;
+  const age = document.getElementById(".js-age").value;
+  
+  console.log(photo);
 }
 
-
+console.log(photo);
 
 
 //EVENTOS
@@ -31,16 +33,16 @@ btnShow1.addEventListener("click", () => {
       <legend>About you</legend>
 
       <label for="insert_photo">Add your photo:</label>
-      <input id="insert_photo" type="file" name="insert_photo" />
+      <input  class="js-photo" id="insert_photo" type="file" name="insert_photo" />
 
       <label for="email">Email: </label>
-      <input id="email" type="email" placeholder="Enter your email addres"  />
+      <input class="js-email" id="email" type="email" placeholder="Enter your email addres"  />
 
       <label for="name">Name:</label>
-      <input id="name" type="text" name="name" placeholder="Enter your name" />
+      <input class="js-name" id="name" type="text" name="name" placeholder="Enter your name" />
 
       <label for="age">Age:</label>
-      <input id="age" type="text" name="age" placeholder="Enter your age" />
+      <input class="js-age" id="age" type="text" name="age" placeholder="Enter your age" />
 
       <label for="quality">One quality that defines you.</label>
       <input id="quality" type="text" name="quality"  placeholder="Enter one quality" />
