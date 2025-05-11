@@ -101,10 +101,40 @@
     justify-content: space-around;
   }
 }
+
+.input_photo{
+  display:none;
+}
+
+
+.btn_add_img{
+  background-color: rgb(187, 42, 42);
+  font-size: 8px;
+  border:solid 1px rgba(4, 41, 66,);
+  padding:0.3em;
+  color: rgb(252, 252, 252);
+  border-radius: 5px;}
+
+  .profile__preview {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #161616;
+  
+}
+
+.sectionb_add_img{
+  display:flex;
+  margin:0.3em;
+  gap: 0.5em;
+  justify-content: center;
+ 
+}
+
 //style preview card
 
 .card{
-  background: rgb(252, 252, 252);
+  background: rgb(187, 42, 42);
   margin:0.1em;
   border: 12px solid;
   border-image: linear-gradient(to right, #ff6b6b, #fbc531) 1;

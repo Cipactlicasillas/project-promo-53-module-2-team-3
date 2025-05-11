@@ -27,10 +27,19 @@
       <fieldset class="form">
         <legend>About you</legend>
 
-        <label for="insert_photo">Add your photo:</label>
-        <input id="insert_photo" type="file" name="insert_photo" />
+        
+        <!--aqui creo una clase y en css "displaynone"-->
+        <div class="section_add_img">
+          <label for="insert_photo">Profile picture:</label>
+          <div class="sectionb_add_img">
+           <label class=btn_add_img for="insert_photo">Add your photo:</label>
+           <span class="profile__preview js__profile-preview"></span>
+           </div>
+        <input class="input_photo js__profile-upload-btn" id="insert_photo" type="file" name="insert_photo"/>
+         </div>
+       
 
-        <label for="email">Email: </label>
+        <label for="email"> Email: </label>
         <input id="email" type="email" placeholder="Enter your email address" />
 
         <label for="name">Name:</label>
@@ -114,7 +123,7 @@
       
       <div class="preview-email js-email" >maria.parez@hotmail.es</div>
       </article>
-      <img class="preview-photo" src="./img/photo1.png" alt="image" />
+      <div class="profile__image js__profile-image" style="background-image:url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE)"></div>
 
          <section class="preview-choose">
       <div class="preview-beachormontain" >🌄</div>
