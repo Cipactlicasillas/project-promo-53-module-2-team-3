@@ -81,3 +81,13 @@ function preQuality() {
 };
 
 // EVENTOS -LLAMADA
+
+
+
+///radio check
+
+// function mostrarIcono() {document.getElementById('icono').style.display = 'block'; }
+
+// function ocultarIcono() {
+// document.getElementById('icono').style.display = 'none';
+// }
