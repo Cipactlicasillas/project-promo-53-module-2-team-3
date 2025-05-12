@@ -27,17 +27,22 @@
       <fieldset class="form">
         <legend>About you</legend>
 
-        
         <!--aqui creo una clase y en css "displaynone"-->
         <div class="section_add_img">
           <label for="insert_photo">Profile picture:</label>
           <div class="sectionb_add_img">
-           <label class=btn_add_img for="insert_photo">Add your photo:</label>
-           <span class="profile__preview js__profile-preview"></span>
-           </div>
-        <input class="input_photo js__profile-upload-btn" id="insert_photo" type="file" name="insert_photo"/>
-         </div>
-       
+            <label class="btn_add_img" for="insert_photo"
+              >Add your photo:</label
+            >
+            <span class="profile__preview js__profile-preview"></span>
+          </div>
+          <input
+            class="input_photo js__profile-upload-btn"
+            id="insert_photo"
+            type="file"
+            name="insert_photo"
+          />
+        </div>
 
         <label for="email"> Email: </label>
         <input id="email" type="email" placeholder="Enter your email address" />
@@ -116,33 +121,27 @@
     <!--Nueva seccion previsualización-->
     <section class="card">
       <div class="contentdata">
-       <div class="preview-age js-age" ></div>
-       <div class="preview-email js-email" >Your email</div>
-      <div class=" preview-quality js-quality" >
+        <div class="preview-age js-age">Your age</div>
+        <div class="preview-email js-email">Your email</div>
+        <div class="preview-quality js-quality">Tell us about you!</div>
       </div>
-      </div>
-      
-     
-      <div class="preview-name js-name" ></div> 
-      
-     
-     
-      <div class="profile__image js__profile-image" style="background-image:url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE)"></div>
 
-         <section class="preview-choose">
-      <div class="preview-beachormontain" >🌄</div>
-      <div class="preview-beerordrink" >🍺</div>
-      <div class="preview-meetorvegan" >🥩</div>
+      <div class="preview-name js-name">Your name</div>
 
-      
-     </section>
-     
+      <div
+        class="profile__image js__profile-image"
+        style="
+          background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
+        "
+      ></div>
+
+      <section class="preview-choose">
+        <div class="preview-beachormontain">🌄</div>
+        <div class="preview-beerordrink">🍺</div>
+        <div class="preview-meetorvegan">🥩</div>
       </section>
-
-     
     </section>
-      
-    
+
     <p class="result"></p>
   </aside>
 </main>

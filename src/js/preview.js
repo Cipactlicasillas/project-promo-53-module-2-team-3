@@ -39,9 +39,9 @@ qualityValue.addEventListener("input", () => {
 // EN VIDEO DAYANA  APLICA  EL ADDEVENTLISTENER 'CHANGE' SOBRE TODA LA CAJA  .FORM  Y HACE CONDICIONAL IF/ELSE  SOBRE LOS ID DE INPUT
 // --- CREO Q NO ES NECESARIO PORQUE A NOSOTRAS NOS  FUNCIONA COMO LO TENEMOS ---(video 8)
 
-/// IVAN HACE UNA LISTA OBJETOS DATA PERO CREO QUE SOLO SIRVE PORQUE ESCRIBE EN UNA SOLA CAJA .INNERHTML, NOSOTRAS ESCRIBIMOS EN CAJAS DIFERENTES DE NUESTRO GRID ----HAGO LA CAJA DATA POR SI ACASO---
+/// IVAN HACE UNA LISTA OBJETOS DATA PERO CREO QUE SOLO SIRVE PORQUE ESCRIBE EN UNA SOLA CAJA .INNERHTML, NOSOTRAS ESCRIBIMOS EN CAJAS DIFERENTES DE NUESTRO GRID ------HAGO LA CAJA DATA POR SI ACASO---
 
-/// HAGO CONDICINAL PARA QUE APAREZCA UN 'PLACEHOLDER' EN PREVIEW
+/// HAGO CONDICIONAL PARA QUE APAREZCA UNA ESPECIE DE 'PLACEHOLDER' EN PREVIEW
 
 const data = {
   name: "",
@@ -49,12 +49,35 @@ const data = {
   email: "",
   quality: "",
 };
-function updatePreview() {
-  if (emailValue === "") {
-    renderEmail.innerHTML = data.email;
-  } else {
+function preEmail() {
+  if (data.email === "") {
     renderEmail.innerHTML = "Your email";
+  } else {
+    renderEmail.innerHTML = data.email;
   }
-}
+};
+function preName() {
+  if (data.name === "") {
+    renderName.innerHTML = "Your name";
+  } else {
+    renderName.innerHTML = data.name;
+  }
+};
+
+function preAge() {
+  if (data.age === "") {
+    renderAge.innerHTML = "Your age";
+  } else {
+    renderAge.innerHTML = data.age;
+  }
+};
+
+function preQuality() {
+  if (data.quality === "") {
+    renderQuality.innerHTML = "Tell us about you!";
+  } else {
+    renderQuality.innerHTML = data.quality;
+  }
+};
 
 // EVENTOS -LLAMADA
