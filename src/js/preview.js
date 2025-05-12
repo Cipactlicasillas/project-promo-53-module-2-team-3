@@ -12,6 +12,11 @@ const ageValue =document.querySelector('#age');
 const qualityValue =document.querySelector('#quality');
 const parrafo=document.querySelector('.result');
 
+const  renderName = document.querySelector('.js-name');
+const renderAge = document.querySelector('.js-age');
+const renderEmail =document.querySelector('.js-email');
+const renderQuality =document.querySelector('.js-quality');
+// falta IMAGEN RENDER
 
 
 /// FUNCIONES
@@ -19,19 +24,19 @@ const parrafo=document.querySelector('.result');
 //photo funcion
 
 emailValue.addEventListener('input' , () =>{
-    parrafo.innerHTML+=emailValue.value;
+    renderEmail.innerHTML=emailValue.value;
 });
 
 nameValue.addEventListener('input' , () =>{
-    parrafo.innerHTML+=nameValue.value;
+    renderName.innerHTML=nameValue.value;
 });
 
 ageValue.addEventListener('input' , () =>{
-    parrafo.innerHTML+=ageValue.value;
+    renderAge.innerHTML=ageValue.value;
 });
 
 qualityValue.addEventListener('input' , () =>{
-    parrafo.innerHTML+=qualityValue.value;
+    renderQuality.innerHTML=qualityValue.value;
 });
 
 
