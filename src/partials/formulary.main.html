@@ -1,0 +1,145 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    src="https://kit.fontawesome.com/66349fc88a.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+    integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY="
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../scss/_formulary.scss" />
+</head>
+<main class="js_form_main form_page">
+  <section class="forms_sections">
+    <div>
+      <p class="js_btnshow1 btnsshow">Fill the form. It's easy!</p>
+    </div>
+    <form action="" method="post" class="js_hidden1 formhidden">
+      <fieldset class="form">
+        <legend>About you</legend>
+
+        
+        <!--aqui creo una clase y en css "displaynone"-->
+        <div class="section_add_img">
+          <label for="insert_photo">Profile picture:</label>
+          <div class="sectionb_add_img">
+           <label class=btn_add_img for="insert_photo">Add your photo:</label>
+           <span class="profile__preview js__profile-preview"></span>
+           </div>
+        <input class="input_photo js__profile-upload-btn" id="insert_photo" type="file" name="insert_photo"/>
+         </div>
+       
+
+        <label for="email"> Email: </label>
+        <input id="email" type="email" placeholder="Enter your email address" />
+
+        <label for="name">Name:</label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+        />
+
+        <label for="age">Age:</label>
+        <input id="age" type="text" name="age" placeholder="Enter your age" />
+
+        <label for="quality">One quality that defines you.</label>
+        <input
+          id="quality"
+          type="text"
+          name="quality"
+          placeholder="Enter one quality"
+        />
+      </fieldset>
+    </form>
+
+    <article>
+      <div>
+        <p class="js_btnshow2 btnsshow">Choose your preferences:</p>
+      </div>
+      <form class="js_hidden2 formhidden">
+        <h3 class="title_checkOne">Check one choice to meet you better!</h3>
+
+        <fieldset class="form">
+          <legend>What place do you prefer?</legend>
+          <div class="place1">
+            <input type="radio" name="place" id="beach" value="p1" />
+            <label for="beach">Beach</label>
+            <input type="radio" name="place" id="mountain" value="p2" />
+            <label for="mountain">Mountain</label>
+          </div>
+        </fieldset>
+        <fieldset class="form">
+          <legend>What drink do you prefer?</legend>
+          <div class="drink1">
+            <input type="radio" name="drink" id="beer" value="p1" />
+            <label for="beer">Beer </label>
+            <input type="radio" name="drink" id="wine" value="p2" />
+            <label for="wine">Wine</label>
+          </div>
+        </fieldset>
+        <fieldset class="form">
+          <legend>What food do you prefer?</legend>
+          <div class="food1">
+            <input type="radio" name="food" id="meat" value="p1" />
+            <label for="meat">Meat</label>
+            <input type="radio" name="food" id="vegan" value="p2" />
+            <label for="vegan"> Vegan</label>
+          </div>
+        </fieldset>
+      </form>
+    </article>
+
+    <article>
+      <p class="js_btnshow3 btnsshow">Share!</p>
+      <div class="js_hidden3 formhidden">
+        <p>BOTON CREAR TARJETA</p>
+        <br />
+        <a>La tarjeta ha sido creada</a>
+      </div>
+    </article>
+  </section>
+
+  <aside class="preview">
+    <h3 class="title_checkOne">Preview your profile!</h3>
+
+    <!--Nueva seccion previsualización-->
+    <section class="card">
+      <div class=" preview-quality js-quality" >Me encanta la montaña, la familia y viajar para conocer mundo!Quiero alguien a mi lado que sume y quiera evolucionar!
+      </div>
+      <article class="content-datas">
+      <div class="preview-age js-age" >34 Ages</div>
+      <div class="preview-name js-name" >Maria Perez Sanchez</div> 
+      
+      <div class="preview-email js-email" >maria.parez@hotmail.es</div>
+      </article>
+      <div class="profile__image js__profile-image" style="background-image:url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE)"></div>
+
+         <section class="preview-choose">
+      <div class="preview-beachormontain" >🌄</div>
+      <div class="preview-beerordrink" >🍺</div>
+      <div class="preview-meetorvegan" >🥩</div>
+
+      
+     </section>
+     
+      </section>
+
+     
+    </section>
+      
+    
+    <p class="result"></p>
+  </aside>
+</main>
+<script src="../js/main.js"></script>
