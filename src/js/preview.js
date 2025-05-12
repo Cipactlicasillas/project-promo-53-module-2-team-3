@@ -39,6 +39,9 @@ qualityValue.addEventListener('input' , () =>{
     renderQuality.innerHTML=qualityValue.value;
 });
 
+// EN VIDEO DAYANA  APLICA  EL ADDEVENTLISTENER 'CHANGE' SOBRE TODA LA CAJA  .FORM  Y HACE CONDICIONAL IF/ELSE  SOBRE LOS ID DE INPUT
+// --- CREO Q NO ES NECESARIO PORQUE A NOSOTRAS NOS  FUNCIONA COMO LO TENEMOS ---
+
 
 
 
