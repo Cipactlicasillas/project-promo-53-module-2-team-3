@@ -36,9 +36,6 @@ qualityValue.addEventListener("input", () => {
   renderQuality.innerHTML = qualityValue.value;
 });
 
-// EN VIDEO DAYANA  APLICA  EL ADDEVENTLISTENER 'CHANGE' SOBRE TODA LA CAJA  .FORM  Y HACE CONDICIONAL IF/ELSE  SOBRE LOS ID DE INPUT
-// --- CREO Q NO ES NECESARIO PORQUE A NOSOTRAS NOS  FUNCIONA COMO LO TENEMOS ---(video 8)
-
 /// IVAN HACE UNA LISTA OBJETOS DATA PERO CREO QUE SOLO SIRVE PORQUE ESCRIBE EN UNA SOLA CAJA .INNERHTML, NOSOTRAS ESCRIBIMOS EN CAJAS DIFERENTES DE NUESTRO GRID ------HAGO LA CAJA DATA POR SI ACASO---
 
 /// HAGO CONDICIONAL PARA QUE APAREZCA UNA ESPECIE DE 'PLACEHOLDER' EN PREVIEW
@@ -92,6 +89,8 @@ function preQuality() {
 // document.getElementById('icono').style.display = 'none';
 // }
 
+
+const resultado = document.querySelector('.preview-choose');
  function placeSelect() {
       const placeOpt = document.getElementsByName("place");
       let mensaje = "";
@@ -99,12 +98,11 @@ function preQuality() {
       for (let placeObj of placeOpt) {
         if (placeObj.checked) {
           if (placeObj.value === "p1") {
-            mensaje.innerHtml = `<i class="fa-solid fa-umbrella-beach"></i>`;
+            resultado.innerHtml = `<i class="fa-solid fa-umbrella-beach"></i>`;
           } else  {
-            mensaje.innerHtml =`<i class="fa-solid fa-mountain-sun"></i>`;
+            resultado.innerHtml =`<i class="fa-solid fa-mountain-sun"></i>`;
           }
-        }
-      }  document.getElementById("preview-choose").innerText = mensaje;
-    }
+           
+    }}};
 
     //// 
