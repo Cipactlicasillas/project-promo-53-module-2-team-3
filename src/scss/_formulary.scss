@@ -98,6 +98,15 @@
   text-align: center;
 }
 
+.reset {
+  padding: 0.5rem;
+  font-family: "Lobster Two", sans-serif;
+  color: rgb(187, 42, 42);
+  border-radius: 0.5rem;
+  border: solid rgb(187, 42, 42);
+  margin-top: 10px;
+}
+
 @media (width > 1024px) {
   .form_page {
     display: flex;
