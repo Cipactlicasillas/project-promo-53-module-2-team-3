@@ -91,3 +91,20 @@ function preQuality() {
 // function ocultarIcono() {
 // document.getElementById('icono').style.display = 'none';
 // }
+
+ function placeSelect() {
+      const placeOpt = document.getElementsByName("place");
+      let mensaje = "";
+
+      for (let placeObj of placeOpt) {
+        if (placeObj.checked) {
+          if (placeObj.value === "p1") {
+            mensaje.innerHtml = `<i class="fa-solid fa-umbrella-beach"></i>`;
+          } else  {
+            mensaje.innerHtml =`<i class="fa-solid fa-mountain-sun"></i>`;
+          }
+        }
+      }  document.getElementById("preview-choose").innerText = mensaje;
+    }
+
+    //// 
