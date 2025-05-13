@@ -215,7 +215,8 @@
 
 .preview-choose {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 0.5em;
   font-size: 12px;
   grid-area: chose;
   background: linear-gradient(145deg, #ffeef2, #f3f8fc); /* fondo suave */
