@@ -88,21 +88,25 @@ function preQuality() {
 // function ocultarIcono() {
 // document.getElementById('icono').style.display = 'none';
 // }
-
+const placeOpt = document.getElementsByName("place");
 
 const resultado = document.querySelector('.preview-choose');
  function placeSelect() {
-      const placeOpt = document.getElementsByName("place");
-      let mensaje = "";
+      
+      console.log('Hola')
 
       for (let placeObj of placeOpt) {
+        console.log(placeObj.checked, placeObj.value );
         if (placeObj.checked) {
           if (placeObj.value === "p1") {
-            resultado.innerHtml = `<i class="fa-solid fa-umbrella-beach"></i>`;
+            resultado.innerHTML = `<i class="fa-solid fa-umbrella-beach"></i>`;
           } else  {
-            resultado.innerHtml =`<i class="fa-solid fa-mountain-sun"></i>`;
+            resultado.innerHTML =`<i class="fa-solid fa-mountain-sun"></i>`;
           }
            
     }}};
 
-    //// 
+  for (let placeObj of placeOpt) {
+    placeObj.addEventListener('input', placeSelect)
+  } 
+    
