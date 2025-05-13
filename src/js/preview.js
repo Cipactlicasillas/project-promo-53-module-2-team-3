@@ -52,14 +52,14 @@ function preEmail() {
   } else {
     renderEmail.innerHTML = data.email;
   }
-};
+}
 function preName() {
   if (data.name === "") {
     renderName.innerHTML = "Your name";
   } else {
     renderName.innerHTML = data.name;
   }
-};
+}
 
 function preAge() {
   if (data.age === "") {
@@ -67,7 +67,7 @@ function preAge() {
   } else {
     renderAge.innerHTML = data.age;
   }
-};
+}
 
 function preQuality() {
   if (data.quality === "") {
@@ -75,38 +75,66 @@ function preQuality() {
   } else {
     renderQuality.innerHTML = data.quality;
   }
-};
+}
 
 // EVENTOS -LLAMADA
 
-
-
 ///radio check
 
-// function mostrarIcono() {document.getElementById('icono').style.display = 'block'; }
-
-// function ocultarIcono() {
-// document.getElementById('icono').style.display = 'none';
-// }
 const placeOpt = document.getElementsByName("place");
 
-const resultado = document.querySelector('.preview-choose');
- function placeSelect() {
-      
-      console.log('Hola')
-
-      for (let placeObj of placeOpt) {
-        console.log(placeObj.checked, placeObj.value );
-        if (placeObj.checked) {
-          if (placeObj.value === "p1") {
-            resultado.innerHTML = `<i class="fa-solid fa-umbrella-beach"></i>`;
-          } else  {
-            resultado.innerHTML =`<i class="fa-solid fa-mountain-sun"></i>`;
-          }
-           
-    }}};
-
+const resultado = document.querySelector(".preview-choose");
+function placeSelect() {
   for (let placeObj of placeOpt) {
-    placeObj.addEventListener('input', placeSelect)
-  } 
-    
+    if (placeObj.checked) {
+      if (placeObj.value === "p1") {
+        resultado.innerHTML += "";
+        resultado.innerHTML += `<i class="fa-solid fa-umbrella-beach fa-xl"></i>`;
+      } else {
+        resultado.innerHTML += `<i class="fa-solid fa-mountain-sun fa-xl"></i>`;
+      }
+    }
+  }
+}
+
+for (let placeObj of placeOpt) {
+  placeObj.addEventListener("input", placeSelect);
+}
+
+const drinkOpt = document.getElementsByName("drink");
+
+function drinkSelect() {
+  for (let drinkObj of drinkOpt) {
+    if (drinkObj.checked) {
+      if (drinkObj.value === "p1") {
+        resultado.innerHTML += "";
+        resultado.innerHTML += `<i class="fa-solid fa-beer-mug-empty fa-xl"></i>`;
+      } else {
+        resultado.innerHTML += `<i class="fa-solid fa-wine-glass-empty fa-xl"></i>`;
+      }
+    }
+  }
+}
+
+for (let drinkObj of drinkOpt) {
+  drinkObj.addEventListener("input", drinkSelect);
+}
+
+const foodOpt = document.getElementsByName("food");
+
+function foodSelect() {
+  for (let foodObj of foodOpt) {
+    if (foodObj.checked) {
+      if (foodObj.value === "p1") {
+        resultado.innerHTML += "";
+        resultado.innerHTML += `<i class="fa-light fa-drumstick-bite fa-xl"></i>`;
+      } else {
+        resultado.innerHTML += `<i class="fa-solid fa-seedling fa-xl"></i>`;
+      }
+    }
+  }
+}
+
+for (let foodObj of foodOpt) {
+  foodObj.addEventListener("input", foodSelect);
+}
