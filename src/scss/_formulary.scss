@@ -112,136 +112,116 @@
   }
 }
 
-.input_photo{
-  display:none;
+.input_photo {
+  display: none;
 }
 
-
-.btn_add_img{
+.btn_add_img {
   background-color: rgb(187, 42, 42);
   font-size: 8px;
-  border:solid 1px rgba(4, 41, 66,);
-  padding:0.3em;
+  border: solid 1px rgba(4, 41, 66);
+  padding: 0.3em;
   color: rgb(252, 252, 252);
-  border-radius: 5px;}
+  border-radius: 5px;
+}
 
-  .profile__preview {
+.profile__preview {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid #161616;
   
 }
 
-.sectionb_add_img{
-  display:flex;
-  margin:0.3em;
+.sectionb_add_img {
+  display: flex;
+  margin: 0.3em;
   gap: 0.5em;
   justify-content: center;
- 
 }
 
 //style preview card
 
-.card{
-  background: rgb(187, 42, 42);
-  margin:0.1em;
-  border: 12px solid;
-  border-image: linear-gradient(to right, #ff6b6b, #fbc531) 1;
-  background: linear-gradient(145deg, #ffeef2, #f3f8fc); /* rosa pálido y azul muy suave */
+.card {
+  background: rgb(163, 20, 20);
+  margin: 0.1em;
+  border: 5px solid;
+  border-image: linear-gradient(to right, #be2a2a, #fbc531) 1;
+  background: linear-gradient(
+    145deg,
+    #ffeef2,
+    #f3f8fc
+  ); /* rosa pálido y azul muy suave */
   box-shadow: 0 4px 12px rgba(0, 63, 105, 0.1); /* sombra azul discreta */
   gap: 5px;
   height: 40vh;
- font-family: "Lora", serif;
+  font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-style: normal;
-    display: grid;
-  grid-template-areas: "quality quality"
-                        "photo datas"
-                        "chose chose";
-                      
-    grid-template-rows: 30% 50% 10%;
-   
- 
-
+  display: grid;
+  grid-template-areas:
+    "name name  "
+    "photo datas"
+    "chose chose ";
+  grid-template-columns: 35% 55%;
+  grid-template-rows: 20% 60% 20%;
+  color: var(--brand-blue-color);
 }
-.preview-quality{
-  margin-top: 0.2em;
- margin-right: 25px;
- font-size:10px;
- color:black;
-   padding: 0.3em;
- background: rgba(255, 255, 255, 0.6);
-backdrop-filter: blur(8px);
-box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  grid-area: quality;
- background: linear-gradient(145deg, #ffeef2, #f3f8fc);
-   background: linear-gradient(145deg, #fff0f6, #f0f8ff);
+.preview-quality {
+  font-size: 10px;
+  color: black;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(145deg, #ffeef2, #f3f8fc);
+  background: linear-gradient(145deg, #fff0f6, #f0f8ff);
   border: 1px solid rgba(255, 105, 135, 0.4); /* rosa más presente */
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-
-
-  
-
-  
 }
 
-.content-datas{
-  padding-top: 0.7em;
-  margin-right: 0.5em;
-  color:black;
-  grid-column: 2 / 3;
+.content-data{
   grid-area:datas;
   background-color: #fbc531;
  
 
 }
 
-.preview-age{
+.preview-age {
   font-size: 16px;
-  
-
+ 
 }
-.preview-name{
-   font-size: 14px;
+.preview-name {
+  font-size: 14px;
+  grid-area: name;
 }
 
-.preview-email{
+.preview-email {
   font-size: 10px;
-   
+ 
 }
-
-
 
 .preview-photo {
   display: flex;
   object-fit: cover;
-  width:80%;
+  width: 80%;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  margin-left: 1em;
-  grid-area:photo;
+  grid-area: photo;
   background: rgba(255, 255, 255, 0.6);
-backdrop-filter: blur(8px);
-box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-border-radius: 12px;
-
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  
 }
 
-
-.preview-choose{
-  display:flex;
+.preview-choose {
+  display: flex;
   justify-content: space-around;
-  font-size:12px;
- grid-area:chose;
-background: linear-gradient(145deg, #ffeef2, #f3f8fc); /* fondo suave */
+  font-size: 12px;
+  grid-area: chose;
+  background: linear-gradient(145deg, #ffeef2, #f3f8fc); /* fondo suave */
   border: 1px solid rgba(0, 63, 105, 0.08); /* borde azul muy sutil y translúcido */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* sombra suave para profundidad */
   border-radius: 1rem;
   margin-inline: 40px;
- 
-  
-
   
 }
-
