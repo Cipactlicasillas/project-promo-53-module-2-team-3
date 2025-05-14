@@ -88,7 +88,6 @@ function placeSelect() {
   for (let placeObj of placeOpt) {
     if (placeObj.checked) {
       if (placeObj.value === "p1") {
-        resultado.innerHTML += "";
         resultado.innerHTML += `<i class="fa-solid fa-umbrella-beach fa-xl"></i>`;
       } else {
         resultado.innerHTML += `<i class="fa-solid fa-mountain-sun fa-xl"></i>`;
@@ -97,9 +96,7 @@ function placeSelect() {
   }
 }
 
-for (let placeObj of placeOpt) {
-  placeObj.addEventListener("input", placeSelect);
-}
+
 
 const drinkOpt = document.getElementsByName("drink");
 
@@ -107,7 +104,6 @@ function drinkSelect() {
   for (let drinkObj of drinkOpt) {
     if (drinkObj.checked) {
       if (drinkObj.value === "p1") {
-        resultado.innerHTML += "";
         resultado.innerHTML += `<i class="fa-solid fa-beer-mug-empty fa-xl"></i>`;
       } else {
         resultado.innerHTML += `<i class="fa-solid fa-wine-glass-empty fa-xl"></i>`;
@@ -116,9 +112,6 @@ function drinkSelect() {
   }
 }
 
-for (let drinkObj of drinkOpt) {
-  drinkObj.addEventListener("input", drinkSelect);
-}
 
 const foodOpt = document.getElementsByName("food");
 
@@ -126,7 +119,6 @@ function foodSelect() {
   for (let foodObj of foodOpt) {
     if (foodObj.checked) {
       if (foodObj.value === "p1") {
-        resultado.innerHTML += "";
         resultado.innerHTML += `<i class="fa-solid fa-drumstick-bite fa-xl"></i>`;
       } else {
         resultado.innerHTML += `<i class="fa-solid fa-seedling fa-xl"></i>`;
@@ -135,6 +127,20 @@ function foodSelect() {
   }
 }
 
+function handleClickPref() {
+  resultado.innerHTML = "";  // Quita los tres iconos
+
+  placeSelect();
+  drinkSelect();
+  foodSelect();
+}
+
+for (let placeObj of placeOpt) {
+  placeObj.addEventListener("input", handleClickPref);
+}
+for (let drinkObj of drinkOpt) {
+  drinkObj.addEventListener("input", handleClickPref);
+}
 for (let foodObj of foodOpt) {
-  foodObj.addEventListener("input", foodSelect);
+  foodObj.addEventListener("input", handleClickPref);
 }
