@@ -183,36 +183,34 @@
   grid-template-rows: 20% 60% 20%;
   color: var(--brand-blue-color);
 }
+
 .preview-quality {
-  font-size: 10px;
-  color: #be2a2a;
-  
+  font-size: 15px;
+  color: var(--brand-blue-color);
 }
 
 .contentdata{
   grid-area:datas;
   display: flex;
   flex-direction: column;
-  gap:10px;
-  
-  
- 
-
+  gap:10px; 
 }
 
 .preview-age {
-  font-size: 16px;
+  font-size: 15px;
  
 }
 .preview-name {
   margin:5px;
-  font-size: 14px;
+  font-size: 20px;
   grid-area: name;
-  color: #be2a2a;
+  color: var(--brand-blue-color);
+  margin-top: 10px;
+  
 }
 
 .preview-email {
-  font-size: 8px;
+  font-size: 15px;
  
 }
 
@@ -248,5 +246,5 @@
 }
 
 .preview-gender{
-  color: black;
+  color: var(--brand-blue-color);
 }
