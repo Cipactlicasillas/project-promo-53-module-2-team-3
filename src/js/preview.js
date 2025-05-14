@@ -127,7 +127,7 @@ function foodSelect() {
     if (foodObj.checked) {
       if (foodObj.value === "p1") {
         resultado.innerHTML += "";
-        resultado.innerHTML += `<i class="fa-light fa-drumstick-bite fa-xl"></i>`;
+        resultado.innerHTML += `<i class="fa-solid fa-drumstick-bite fa-xl"></i>`;
       } else {
         resultado.innerHTML += `<i class="fa-solid fa-seedling fa-xl"></i>`;
       }
