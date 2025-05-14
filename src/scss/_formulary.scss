@@ -216,8 +216,8 @@
   grid-area:photo;
   border-radius: 50%;
   margin-left:2px;
-  
-  .profile_preview {
+  }
+  .profile__preview {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -226,7 +226,7 @@
   height:2em;
   display:inline-block;
 }
-}
+
 
 .preview-choose {
   display: flex;
