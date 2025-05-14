@@ -1,45 +1,140 @@
-'use strict';
+"use strict";
 
 ////RECOGER DATOS DE INPUTS PARA AÑADIR EN LA PREVISUALIZACION
 
-
 //// QUERY SELECTOR
 
-const photoValue = document.querySelector('#insert_photo');
-const emailValue =document.querySelector('#email');
-const nameValue =document.querySelector('#name');
-const ageValue =document.querySelector('#age');
-const qualityValue =document.querySelector('#quality');
-const parrafo=document.querySelector('.result');
+const photoValue = document.querySelector("#insert_photo");
+const emailValue = document.querySelector("#email");
+const nameValue = document.querySelector("#name");
+const ageValue = document.querySelector("#age");
+const qualityValue = document.querySelector("#quality");
+const parrafo = document.querySelector(".result");
 
-const  renderName = document.querySelector('.js-name');
-const renderAge = document.querySelector('.js-age');
-const renderEmail =document.querySelector('.js-email');
-const renderQuality =document.querySelector('.js-quality');
+const renderName = document.querySelector(".js-name");
+const renderAge = document.querySelector(".js-age");
+const renderEmail = document.querySelector(".js-email");
+const renderQuality = document.querySelector(".js-quality");
 // falta IMAGEN RENDER
 
-
 /// FUNCIONES
-
 //photo funcion
 
-emailValue.addEventListener('input' , () =>{
-    renderEmail.innerHTML=emailValue.value;
+emailValue.addEventListener("input", () => {
+  renderEmail.innerHTML = emailValue.value;
 });
 
-nameValue.addEventListener('input' , () =>{
-    renderName.innerHTML=nameValue.value;
+nameValue.addEventListener("input", () => {
+  renderName.innerHTML = nameValue.value;
 });
 
-ageValue.addEventListener('input' , () =>{
-    renderAge.innerHTML=ageValue.value;
+ageValue.addEventListener("input", () => {
+  renderAge.innerHTML = ageValue.value;
 });
 
-qualityValue.addEventListener('input' , () =>{
-    renderQuality.innerHTML=qualityValue.value;
+qualityValue.addEventListener("input", () => {
+  renderQuality.innerHTML = qualityValue.value;
 });
 
+/// IVAN HACE UNA LISTA OBJETOS DATA PERO CREO QUE SOLO SIRVE PORQUE ESCRIBE EN UNA SOLA CAJA .INNERHTML, NOSOTRAS ESCRIBIMOS EN CAJAS DIFERENTES DE NUESTRO GRID ------HAGO LA CAJA DATA POR SI ACASO---
 
+/// HAGO CONDICIONAL PARA QUE APAREZCA UNA ESPECIE DE 'PLACEHOLDER' EN PREVIEW
 
+const data = {
+  name: "",
+  age: "",
+  email: "",
+  quality: "",
+};
+function preEmail() {
+  if (data.email === "") {
+    renderEmail.innerHTML = "Your email";
+  } else {
+    renderEmail.innerHTML = data.email;
+  }
+}
+function preName() {
+  if (data.name === "") {
+    renderName.innerHTML = "Your name";
+  } else {
+    renderName.innerHTML = data.name;
+  }
+}
+
+function preAge() {
+  if (data.age === "") {
+    renderAge.innerHTML = "Your age";
+  } else {
+    renderAge.innerHTML = data.age;
+  }
+}
+
+function preQuality() {
+  if (data.quality === "") {
+    renderQuality.innerHTML = "Tell us about you!";
+  } else {
+    renderQuality.innerHTML = data.quality;
+  }
+}
 
 // EVENTOS -LLAMADA
+
+///radio check
+
+const placeOpt = document.getElementsByName("place");
+
+const resultado = document.querySelector(".preview-choose");
+function placeSelect() {
+  for (let placeObj of placeOpt) {
+    if (placeObj.checked) {
+      if (placeObj.value === "p1") {
+        resultado.innerHTML += "";
+        resultado.innerHTML += `<i class="fa-solid fa-umbrella-beach fa-xl"></i>`;
+      } else {
+        resultado.innerHTML += `<i class="fa-solid fa-mountain-sun fa-xl"></i>`;
+      }
+    }
+  }
+}
+
+for (let placeObj of placeOpt) {
+  placeObj.addEventListener("input", placeSelect);
+}
+
+const drinkOpt = document.getElementsByName("drink");
+
+function drinkSelect() {
+  for (let drinkObj of drinkOpt) {
+    if (drinkObj.checked) {
+      if (drinkObj.value === "p1") {
+        resultado.innerHTML += "";
+        resultado.innerHTML += `<i class="fa-solid fa-beer-mug-empty fa-xl"></i>`;
+      } else {
+        resultado.innerHTML += `<i class="fa-solid fa-wine-glass-empty fa-xl"></i>`;
+      }
+    }
+  }
+}
+
+for (let drinkObj of drinkOpt) {
+  drinkObj.addEventListener("input", drinkSelect);
+}
+
+const foodOpt = document.getElementsByName("food");
+
+function foodSelect() {
+  for (let foodObj of foodOpt) {
+    if (foodObj.checked) {
+      if (foodObj.value === "p1") {
+        resultado.innerHTML += "";
+        resultado.innerHTML += `<i class="fa-light fa-drumstick-bite fa-xl"></i>`;
+      } else {
+        resultado.innerHTML += `<i class="fa-solid fa-seedling fa-xl"></i>`;
+      }
+    }
+  }
+}
+
+for (let foodObj of foodOpt) {
+  foodObj.addEventListener("input", foodSelect);
+}
