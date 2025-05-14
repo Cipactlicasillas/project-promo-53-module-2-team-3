@@ -101,9 +101,9 @@
 .reset {
   padding: 0.5rem;
   font-family: "Lobster Two", sans-serif;
-  color: rgb(187, 42, 42);
+  color: var(--brand-blue-color);
   border-radius: 0.5rem;
-  border: solid rgb(187, 42, 42);
+  border: solid var(--brand-blue-color);
   margin-top: 10px;
 }
 
@@ -127,11 +127,14 @@
 
 .btn_add_img {
   background-color: rgb(187, 42, 42);
-  font-size: 8px;
-  border: solid 1px rgba(4, 41, 66);
-  padding: 0.3em;
-  color: rgb(252, 252, 252);
-  border-radius: 5px;
+  padding: 0.5rem;
+  font-family: "Lobster Two", sans-serif;
+  color: white;
+  border-radius: 0.5rem;
+  border: solid rgb(187, 42, 42);
+  margin-top: 10px;
+  font-size: 13px;
+  
 }
 
 .profile__preview {
@@ -146,6 +149,7 @@
   margin: 0.3em;
   gap: 0.5em;
   justify-content: center;
+ 
 }
 
 //style preview card
