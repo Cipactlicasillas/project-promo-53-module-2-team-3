@@ -15,6 +15,7 @@ const renderName = document.querySelector(".js-name");
 const renderAge = document.querySelector(".js-age");
 const renderEmail = document.querySelector(".js-email");
 const renderQuality = document.querySelector(".js-quality");
+
 // falta IMAGEN RENDER
 
 /// FUNCIONES
@@ -96,8 +97,6 @@ function placeSelect() {
   }
 }
 
-
-
 const drinkOpt = document.getElementsByName("drink");
 
 function drinkSelect() {
@@ -112,23 +111,22 @@ function drinkSelect() {
   }
 }
 
-
 const foodOpt = document.getElementsByName("food");
 
 function foodSelect() {
   for (let foodObj of foodOpt) {
     if (foodObj.checked) {
       if (foodObj.value === "p1") {
-        resultado.innerHTML += `<i class="fa-solid fa-drumstick-bite fa-xl"></i>`;
+        resultado.innerHTML += `<i class="fa-solid fa-burger fa-xl"></i>`;
       } else {
-        resultado.innerHTML += `<i class="fa-solid fa-seedling fa-xl"></i>`;
+        resultado.innerHTML += `<i class="fa-solid fa-leaf fa-xl"></i>`;
       }
     }
   }
 }
 
 function handleClickPref() {
-  resultado.innerHTML = "";  // Quita los tres iconos
+  resultado.innerHTML = ""; // Quita los tres iconos
 
   placeSelect();
   drinkSelect();
@@ -143,4 +141,31 @@ for (let drinkObj of drinkOpt) {
 }
 for (let foodObj of foodOpt) {
   foodObj.addEventListener("input", handleClickPref);
+}
+
+/// ADD GENDER
+
+const renderGender = document.querySelector(".js-gender");
+const genderOpt = document.getElementsByName("gender");
+
+function genderSelect() {
+  for (let genderObj of genderOpt) {
+    if (genderObj.checked) {
+      if (genderObj.value === "p3") {
+        renderGender.innerHTML = `Interested in: Women`;
+      } else if (genderObj.value === "p4") {
+        renderGender.innerHTML = `Interested in: Men`;
+      } else if (genderObj.value === "p5") {
+        renderGender.innerHTML = `Interested in: Both`;
+      }
+    }
+  }
+}
+
+function handleClickGen() {
+  renderGender.innerHTML = ""; 
+  genderSelect();
+}
+for (let genderObj of genderOpt) {
+  genderObj.addEventListener("input", handleClickGen);
 }
