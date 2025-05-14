@@ -99,12 +99,15 @@
 }
 
 .reset {
-  padding: 0.5rem;
+  padding: 0.7rem;
   font-family: "Lobster Two", sans-serif;
   color: rgb(187, 42, 42);
   border-radius: 0.5rem;
   border: solid rgb(187, 42, 42);
   margin-top: 10px;
+}
+.gender1{
+  padding: 0.5rem;
 }
 
 @media (width > 1024px) {
@@ -231,10 +234,13 @@
 .preview-choose {
   display: flex;
   justify-content: space-around;
-  gap: 0.5em;
-  font-size: 12px;
+  font-size: 1.7rem;
   grid-area: chose;
   margin-top:4px;
-
+ 
   
+}
+
+.preview-gender{
+  color: black;
 }
