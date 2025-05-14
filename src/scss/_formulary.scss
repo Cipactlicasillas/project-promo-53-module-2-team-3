@@ -104,9 +104,16 @@
   color: var(--brand-blue-color);
   border-radius: 0.5rem;
   border: solid var(--brand-blue-color);
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 10px; 
+ margin-bottom: 10px;
 }
+
+  .final {
+display: flex;
+justify-content: center;
+  }
+  
+
 .gender1{
   padding: 0.5rem;
 }
