@@ -14,8 +14,7 @@ justify-content: center;
 padding-top: 10em;
 padding-bottom: 2.5em;
 align-items: center;
-justify-content: space;
-
+justify-content: space; 
 }
 
 .imglog{
@@ -32,13 +31,13 @@ justify-content: space;
     margin-left: 0.1em;
     font-size: 2.5em;
   }
+
   .sectmedium{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
-    
+    justify-content: center; 
   }
+   
   .sectmedium h3{
     display:flex;
     justify-content: center;
@@ -53,17 +52,14 @@ justify-content: space;
     justify-content: center;
     text-align: center; 
     font-size: 1.2em;
-    color: rgba(9, 91, 116, 0.966);
-   
-   
+    color: rgba(9, 91, 116, 0.966); 
     padding-bottom: 2em;
     padding-inline: 1.5em;
     
   }
 
   .conticon{
-    display:flex;
-  
+    display:flex; 
     padding:1em;
     margin-block: 3em;
     margin-inline:auto;
@@ -74,6 +70,10 @@ justify-content: space;
     box-shadow: 0 0.5em 0.1em rgb(189, 69, 69);
   }
 
+.parra {
+  margin-top: 10px;
+}
+
   .img1{
     display:flex;
     margin-inline:auto;
@@ -83,6 +83,7 @@ justify-content: space;
     border-radius: 20%;
    
   }
+
   .img2{
     display:flex;
     margin-inline:auto;
@@ -91,13 +92,26 @@ justify-content: space;
     padding:0.3em;
     border-radius: 20%;
   }
+
     .img3{
       display:flex;
       margin-inline:auto;
       width: 60%;
       object-fit: cover;
       padding:0.3em;
-      border-radius: 20%;
+      border-radius: 20%; 
+    }
+  
+    .fill {
+      color: rgba(9, 91, 116, 0.966);
+    }
+
+    .chose {
+      color: rgba(9, 91, 116, 0.966);
+    }
+
+    .share {
+      color: rgba(9, 91, 116, 0.966);
     }
 
     .btngo{
