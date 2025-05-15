@@ -29,14 +29,9 @@ This personalized card can be downloaded and shared within a dating website, giv
 3. Watch your card update in real time  
 4. Download or share your card for use on the dating platform  
 
-## 📸 Screenshots
 
-_Add your screenshots or a demo GIF here to showcase the UI and functionality._
 
-Example:
 
-```
-![log](C:\Users\ernesto\Desktop\A-programar\adalab-modulo-2\Proyecto equipo\project-promo-53-module-2-team-3\public\img)
 
 
 ## 👥 Collaborators
