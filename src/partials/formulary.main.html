@@ -34,7 +34,6 @@
             <label class="btn_add_img" for="insert_photo"
               >Add your photo:</label
             >
-            
           </div>
           <input
             class="input_photo js__profile-upload-btn"
@@ -45,7 +44,7 @@
           <span class="profile__preview js__profile-preview"></span>
         </div>
 
-       <label for="name">Name:</label>
+        <label for="name">Name:</label>
         <input
           id="name"
           type="text"
@@ -58,7 +57,6 @@
 
         <label for="email"> Email: </label>
         <input id="email" type="email" placeholder="Enter your email address" />
-
 
         <label for="quality">One quality that defines you.</label>
         <input
@@ -76,20 +74,40 @@
       </div>
       <form class="js_hidden2 formhidden">
         <h3 class="title_checkOne">Check one choice to meet you better!</h3>
-        <div class= "gender1 js_gender" >
-Interested in: 
-<input type="radio" name="gender" id="women" value="p3" /><label for="women">Women </label>
-<input type="radio" name="gender" id="men" value="p4" /><label for="men">Men </label>
-<input type="radio" name="gender" id="both" value="p5" /><label for="both">Both </label>
-</div>
-
+        <div class="gender1 js_gender">
+          Interested in:
+          <input type="radio" name="gender" id="women" value="p3" /><label
+            for="women"
+            >Women
+          </label>
+          <input type="radio" name="gender" id="men" value="p4" /><label
+            for="men"
+            >Men
+          </label>
+          <input type="radio" name="gender" id="both" value="p5" /><label
+            for="both"
+            >Both
+          </label>
+        </div>
 
         <fieldset class="form">
           <legend>What place do you prefer?</legend>
           <div class="place1 js_place">
-            <input type="radio" name="place" id="beach" value="p1"  />
+            <input
+              type="radio"
+              name="place"
+              id="beach"
+              value="p1"
+              class="myPlace1"
+            />
             <label for="beach">Beach </label>
-            <input type="radio" name="place" id="mountain" value="p2" />
+            <input
+              type="radio"
+              name="place"
+              id="mountain"
+              value="p2"
+              class="myPlace2"
+            />
             <label for="mountain">Mountain</label>
           </div>
         </fieldset>
@@ -117,9 +135,9 @@ Interested in:
     <article>
       <p class="js_btnshow3 btnsshow">Share!</p>
       <div class="js_hidden3 formhidden">
-        <p class=" js_create create">Create your card</p>
+        <p class="js_create create">Create your card</p>
       </div>
-        <p class="alert js_alert"></p>
+      <p class="alert js_alert"></p>
     </article>
   </section>
 
@@ -129,34 +147,31 @@ Interested in:
     <!--Nueva seccion previsualización-->
     <section class="card">
       <div class="contentdata">
-       <div class="preview-age js-age" ></div>
-       <div class="preview-email js-email" ></div>
-       <div class=" preview-quality js-quality" ></div>
-       <div class="preview-gender js-gender" ></div> 
+        <div class="preview-age js-age"></div>
+        <div class="preview-email js-email"></div>
+        <div class="preview-quality js-quality"></div>
+        <div class="preview-gender js-gender"></div>
       </div>
-      
-     
-      <div class="preview-name js-name" ></div> 
-      
-     
-     
-      <div class="profile__image js__profile-image" style="background-image:url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE)"></div>
+
+      <div class="preview-name js-name"></div>
+
+      <div
+        class="profile__image js__profile-image"
+        style="
+          background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
+        "
+      ></div>
 
       <section class="preview-choose">
         <div class="preview-beachormontain"></div>
         <div class="preview-beerordrink"></div>
         <div class="preview-meetorvegan"></div>
       </section>
-     </section>
-     
-     <div class="end"> 
+    </section>
+
+    <div class="end">
       <p class="reset">Reset</p>
-     </div>
-
-   
-    
-   </aside>
-
+    </div>
+  </aside>
 </main>
 <script src="../js/main.js"></script>
-
