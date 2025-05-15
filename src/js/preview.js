@@ -9,7 +9,7 @@ const emailValue = document.querySelector("#email");
 const nameValue = document.querySelector("#name");
 const ageValue = document.querySelector("#age");
 const qualityValue = document.querySelector("#quality");
-const parrafo = document.querySelector(".result");
+
 
 const renderName = document.querySelector(".js-name");
 const renderAge = document.querySelector(".js-age");
