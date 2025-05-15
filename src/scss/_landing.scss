@@ -101,17 +101,19 @@ justify-content: space;
     }
 
     .btngo{
+     padding: 0.7rem;
+     font-family: "Lobster Two", sans-serif;
+     color: var(--brand-blue-color);
+     border: solid var(--brand-blue-color);
+     margin-top: 10px; 
+     margin-bottom: 10px;
+     display: block; margin: 0 auto;
+     font-size: 1.1em;
+     border-radius: 0.5rem;
+     padding-inline: 0.6em;
+     padding-block: 0.3em;
+     background-color: rgb(228, 217, 227);
      
-      
-      display: block; margin: 0 auto;
-      font-size: 1.1em;
-      border-radius: 50%;
-      padding-inline: 0.6em;
-      padding-block: 0.3em;
-      border:none;
-      text-decoration: none;
-      border:solid rgb(192, 12, 42);
-      font-family: "Lobster Two", sans-serif;
     }
 
 
