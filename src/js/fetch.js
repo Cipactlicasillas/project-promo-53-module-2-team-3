@@ -21,9 +21,9 @@ const handleClickCreateBtn = (ev) => {
     ageValue.value === "" ||
     qualityValue.value === ""
   ) {
-    alertResult.innerHTML = "Faltan campos por rellenar";
+    alertResult.innerHTML = "Some information is missing, please check the form.";
   } else {
-    alertResult.innerHTML = "Enviando la información";
+    alertResult.innerHTML = "Sending information";
 
  
 
@@ -53,9 +53,9 @@ const handleClickCreateBtn = (ev) => {
       .then((data) => {
         if (data.success === false) {
           alertResult.innerHTML =
-            "No se ha podido guardar la información porque faltan campos por rellenar.";
+            "The information could not be saved because some fields are missing.";
         } else {
-          alertResult.innerHTML = `Se ha guardado la información de tu tarjeta. Puedes verla en esta dirección: <a href="http://localhost:5173/card.html?id=${data.infoID}">http://localhost:5173/card.html?id=${data.infoID}</a>`;
+          alertResult.innerHTML = `Your card information has been saved. You can view it at this address: <a href="http://localhost:5173/card.html?id=${data.infoID}">http://localhost:5173/card.html?id=${data.infoID}</a>`;
         }
       });
   }
