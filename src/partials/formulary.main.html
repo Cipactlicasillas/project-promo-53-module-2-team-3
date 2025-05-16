@@ -74,31 +74,40 @@
       </div>
       <form class="js_hidden2 formhidden">
         <h3 class="title_checkOne">Check one choice to meet you better!</h3>
-        <div class="gender1 js_gender">
+        <div class="gender1">
           Interested in:
-          <input type="radio" name="gender" id="women" value="p3" /><label
-            for="women"
-            >Women
-          </label>
-          <input type="radio" name="gender" id="men" value="p4" /><label
-            for="men"
-            >Men
-          </label>
-          <input type="radio" name="gender" id="both" value="p5" /><label
-            for="both"
-            >Both
-          </label>
+          <input
+            type="radio"
+            name="gender"
+            id="women"
+            value="p3"
+            class="js_gender"
+          /><label for="women">Women </label>
+          <input
+            type="radio"
+            name="gender"
+            id="men"
+            value="p4"
+            class="js_gender"
+          /><label for="men">Men </label>
+          <input
+            type="radio"
+            name="gender"
+            id="both"
+            value="p5"
+            class="js_gender"
+          /><label for="both">Both </label>
         </div>
 
         <fieldset class="form">
           <legend>What place do you prefer?</legend>
-          <div class="place1 js_place">
+          <div class="place1">
             <input
               type="radio"
               name="place"
               id="beach"
               value="p1"
-              class="myPlace1"
+              class="js_place"
             />
             <label for="beach">Beach </label>
             <input
@@ -106,26 +115,50 @@
               name="place"
               id="mountain"
               value="p2"
-              class="myPlace2"
+              class="js_place"
             />
             <label for="mountain">Mountain</label>
           </div>
         </fieldset>
         <fieldset class="form">
           <legend>What drink do you prefer?</legend>
-          <div class="drink1 js_drink">
-            <input type="radio" name="drink" id="beer" value="p1" />
+          <div class="drink1">
+            <input
+              type="radio"
+              name="drink"
+              id="beer"
+              value="p1"
+              class="js_drink"
+            />
             <label for="beer">Beer </label>
-            <input type="radio" name="drink" id="wine" value="p2" />
+            <input
+              type="radio"
+              name="drink"
+              id="wine"
+              value="p2"
+              class="js_drink"
+            />
             <label for="wine">Wine</label>
           </div>
         </fieldset>
         <fieldset class="form">
           <legend>What food do you prefer?</legend>
-          <div class="food1 js_food">
-            <input type="radio" name="food" id="meat" value="p1" />
+          <div class="food1">
+            <input
+              type="radio"
+              name="food"
+              id="meat"
+              value="p1"
+              class="js_food"
+            />
             <label for="meat">Meat</label>
-            <input type="radio" name="food" id="vegan" value="p2" />
+            <input
+              type="radio"
+              name="food"
+              id="vegan"
+              value="p2"
+              class="js_food"
+            />
             <label for="vegan"> Vegan</label>
           </div>
         </fieldset>
@@ -158,7 +191,7 @@
       <div
         class="profile__image js__profile-image"
         style="
-          background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
+          background-image: url('//via.placeholder.com/300x300/cccccc/666666/?text=IMAGE');
         "
       ></div>
 
@@ -174,4 +207,3 @@
     </div>
   </aside>
 </main>
-<script src="../js/main.js"></script>
