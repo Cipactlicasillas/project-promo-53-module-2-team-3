@@ -1,4 +1,3 @@
-'use strict';
 
 const createBtn = document.querySelector('.js_create');
 const alertResult = document.querySelector('.js_alert');
@@ -19,9 +18,11 @@ const handleClickCreateBtn = (ev) => {
     "field5": emailValue.value,
     "field6": nameValue.value,
     "field7": ageValue.value,
-    "field7": qualityValue.value,
+    "field7": qualityValue,
     "photo": fr.result
   };
+
+  //validación de entrada de usuari@
  if( genderChecked.value === '' ||  placeChecked.value === '' || drinkChecked.value === '' || foodChecked.value === '' ||  emailValue.value  === ''  ||  nameValue.value  === ''  ||  ageValue.value === '' ||  qualityValue.value === '' ) {
     alertResult.innerHTML = 'Faltan campos por rellenar';
   

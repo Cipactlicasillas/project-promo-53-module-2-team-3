@@ -16,7 +16,7 @@ const renderAge = document.querySelector(".js-age");
 const renderEmail = document.querySelector(".js-email");
 const renderQuality = document.querySelector(".js-quality");
 
-// falta IMAGEN RENDER
+
 
 /// FUNCIONES
 //photo funcion
