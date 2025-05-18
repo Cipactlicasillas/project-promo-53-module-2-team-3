@@ -10,7 +10,6 @@ const nameValue = document.querySelector("#name");
 const ageValue = document.querySelector("#age");
 const qualityValue = document.querySelector("#quality");
 
-
 const renderName = document.querySelector(".js-name");
 const renderAge = document.querySelector(".js-age");
 const renderEmail = document.querySelector(".js-email");
@@ -41,40 +40,40 @@ qualityValue.addEventListener("input", () => {
 
 /// HAGO CONDICIONAL PARA QUE APAREZCA UNA ESPECIE DE 'PLACEHOLDER' EN PREVIEW
 
-const data = {
+const datas = {
   name: "",
   age: "",
   email: "",
   quality: "",
 };
 function preEmail() {
-  if (data.email === "") {
+  if (datas.email === "") {
     renderEmail.innerHTML = "Your email";
   } else {
-    renderEmail.innerHTML = data.email;
+    renderEmail.innerHTML = datas.email;
   }
 }
 function preName() {
-  if (data.name === "") {
+  if (datas.name === "") {
     renderName.innerHTML = "Your name";
   } else {
-    renderName.innerHTML = data.name;
+    renderName.innerHTML = datas.name;
   }
 }
 
 function preAge() {
-  if (data.age === "") {
+  if (datas.age === "") {
     renderAge.innerHTML = "Your age";
   } else {
-    renderAge.innerHTML = data.age;
+    renderAge.innerHTML = datas.age;
   }
 }
 
 function preQuality() {
-  if (data.quality === "") {
+  if (datas.quality === "") {
     renderQuality.innerHTML = "Tell us about you!";
   } else {
-    renderQuality.innerHTML = data.quality;
+    renderQuality.innerHTML = datas.quality;
   }
 }
 
@@ -163,7 +162,7 @@ function genderSelect() {
 }
 
 function handleClickGen() {
-  renderGender.innerHTML = ""; 
+  renderGender.innerHTML = "";
   genderSelect();
 }
 for (let genderObj of genderOpt) {
