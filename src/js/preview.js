@@ -14,6 +14,10 @@ const renderName = document.querySelector(".js-name");
 const renderAge = document.querySelector(".js-age");
 const renderEmail = document.querySelector(".js-email");
 const renderQuality = document.querySelector(".js-quality");
+const previewImage = document.querySelector(".js__profile-image");
+const previewIcons = document.querySelector(".preview-choose");
+const form2 = document.querySelector(".js_hidden2");
+const btnReset = document.querySelector(".js_ResetBtn");
 
 // falta IMAGEN RENDER
 
@@ -168,3 +172,28 @@ function handleClickGen() {
 for (let genderObj of genderOpt) {
   genderObj.addEventListener("input", handleClickGen);
 }
+
+function resetAll() {
+  nameValue.value = "";
+  ageValue.value = "";
+  emailValue.value = "";
+  qualityValue.value = "";
+
+  previewImage.style.backgroundImage =
+    "url('//via.placeholder.com/300x300/cccccc/666666/?text=IMAGE')";
+
+  renderName.innerHTML = "";
+  renderAge.innerHTML = "";
+  renderEmail.innerHTML = "";
+  renderQuality.innerHTML = "";
+  renderGender.innerHTML = "";
+  photoValue.value = "";
+  previewIcons.innerHTML = "";
+
+  [...form2.elements].forEach((el) => {
+    if (el.type === "radio") {
+      el.checked = false;
+    }
+  });
+}
+btnReset.addEventListener("click", resetAll);
