@@ -1,4 +1,4 @@
-"use strict";
+
 
 ////RECOGER DATOS DE INPUTS PARA AÑADIR EN LA PREVISUALIZACION
 
@@ -19,7 +19,7 @@ const previewIcons = document.querySelector(".preview-choose");
 const form2 = document.querySelector(".js_hidden2");
 const btnReset = document.querySelector(".js_ResetBtn");
 
-// falta IMAGEN RENDER
+
 
 /// FUNCIONES
 //photo funcion
