@@ -75,8 +75,7 @@
   color: rgb(187, 42, 42);
   border-radius: 0.5rem;
   border: solid rgb(187, 42, 42);
-  margin-top: 10px;
-
+  margin-top: 10px; 
 }
 
 .formulary_page {
@@ -99,7 +98,7 @@
 .preview {
   display: block;
   align-items: center;
-  justify-items: center; 
+  justify-items: center;
 }
 
 .title_checkOne {
@@ -113,17 +112,16 @@
   color: var(--brand-blue-color);
   border-radius: 0.5rem;
   border: solid var(--brand-blue-color);
-  margin-top: 10px; 
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
-  .end {
+.end {
   display: flex;
   justify-content: center;
-  }
-  
+}
 
-.gender1{
+.gender1 {
   padding: 0.5rem;
 }
 
@@ -153,23 +151,20 @@
   border-radius: 0.5rem;
   border: solid rgb(187, 42, 42);
   margin-top: 10px;
-  font-size: 13px;
-  
+  font-size: 13px; 
 }
 
 .profile__preview {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  
+  background-size: cover; 
 }
 
 .sectionb_add_img {
   display: flex;
   margin: 0.3em;
   gap: 0.5em;
-  justify-content: center;
- 
+  justify-content: center; 
 }
 
 //style preview card
@@ -188,7 +183,7 @@
     #f3f8fc
   ); /* rosa pálido y azul muy suave */
   box-shadow: 0 4px 12px rgba(0, 63, 105, 0.1); /* sombra azul discreta */
-   font-family: "Lora", serif;
+  font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-style: normal;
   display: grid;
@@ -206,61 +201,61 @@
   color: var(--brand-blue-color);
 }
 
-.contentdata{
-  grid-area:datas;
+.contentdata {
+  grid-area: datas;
   display: flex;
   flex-direction: column;
-  gap:10px; 
+  gap: 10px;
 }
 
 .preview-age {
   font-size: 15px;
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 .preview-name {
-  margin:5px;
+  margin: 5px;
   font-size: 20px;
   grid-area: name;
   color: var(--brand-blue-color);
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .preview-email {
-  font-size: 15px; 
+  font-size: 15px;
 }
 
 .profile__image {
-   display: flex;
+  display: flex;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  grid-area:photo;
+  grid-area: photo;
   border-radius: 50%;
-  margin-left:7px;
+  margin-left: 7px;
   background-size: cover;
   background-position: center;
 }
- 
-  .profile__preview {
+
+.profile__preview {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border: 1px solid #161616;
-  width:2em;
-  height:2em;
-  display:inline-block;
+  width: 2em;
+  height: 2em;
+  display: inline-block;
 }
- 
+
 .preview-choose {
   display: flex;
   justify-content: space-around;
   font-size: 1.2rem;
   grid-area: chose;
-  margin-top:14px;  
+  margin-top: 14px;
 }
 
-.preview-gender{
+.preview-gender {
   color: var(--brand-blue-color);
   font-size: 15px;
 }
