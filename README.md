@@ -5,6 +5,11 @@ ViveMatch is a web application that allows users to create and customize a perso
 
 This personalized card can be downloaded and shared within a dating website, giving other users a visual and concise overview of someone's personality, preferences, and appearance at a glance.
 
+https://us04web.zoom.us/j/78277194677?pwd=CDUWYorb1VCUIZjOUsgUvq6VCDuHez.1
+![preview card](C:\Users\ernesto\Downloads\captura vivematch readme.PNG)
+
+
+
 ## 🚀 Features
 
 - Fill out a form with personal and lifestyle details  
