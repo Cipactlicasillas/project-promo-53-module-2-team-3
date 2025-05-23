@@ -4,65 +4,246 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/main-019f56a1.css">
+    
+    <link rel="stylesheet" href="./assets/main-eb0809d1.css">
   </head>
-  <body>
+  <body class="container">
     
+    <header>
+  <div class="header_container">
+    <a href="/index.html">
+      <img class="logo_hdr" src="./img/logo2footer.png" alt="logo" />
+    </a>
+    <a class="vibeH">VibeMatch</a>
+  </div>
+</header>
+
     <head>
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    src="https://kit.fontawesome.com/66349fc88a.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+    integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY="
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../scss/_formulary.scss" />
 </head>
+<main class="js_form_main form_page">
+  <section class="forms_sections">
+    <div>
+      <p class="js_btnshow1 btnsshow">Fill the form. It's easy!</p>
+    </div>
+    <form action="" method="post" class="js_hidden1 formhidden">
+      <fieldset class="form">
+        <legend>About you</legend>
 
-<section class="form_elements">
-  <form action="" method="post">
-    <fieldset class="form">
-      <legend>About you</legend>
+        <!--aqui creo una clase y en css "displaynone"-->
+        <div class="section_add_img">
+          <label for="insert_photo">Profile picture:</label>
+          <div class="sectionb_add_img">
+            <label class="btn_add_img" for="insert_photo"
+              >Add your photo:</label
+            >
+          </div>
+          <input
+            class="input_photo js__profile-upload-btn"
+            id="insert_photo"
+            type="file"
+            name="insert_photo"
+          />
+          <span class="profile__preview js__profile-preview"></span>
+        </div>
 
-      <label for="insert_photo">Add your photo</label>
-      <input id="insert_photo" type="file" name="insert_photo" />
+        <label for="name">Name:</label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+        />
 
-      <label for="email">Email </label>
-      <input id="email" type="email" />
+        <label for="age">Age:</label>
+        <input id="age" type="text" name="age" placeholder="Enter your age" />
 
-      <label for="name">Name</label>
-      <input id="name" type="text" name="name" />
+        <label for="email"> Email: </label>
+        <input id="email" type="email" placeholder="Enter your email address" />
 
-      <label for="age">Age</label>
-      <input id="age" type="text" name="age" />
+        <label for="quality">One quality that defines you.</label>
+        <input
+          id="quality"
+          type="text"
+          name="quality"
+          placeholder="Enter one quality"
+        />
+      </fieldset>
+    </form>
 
-      <label for="quality">One quality that defines you.</label>
-      <input id="quality" type="text" name="quality" />
-    </fieldset>
-    <h3>Check one choice to meet you better!</h3>
-    <fieldset class="form">
-      <legend>What place do you prefer?</legend>
+    <article>
       <div>
-        <input type="radio" name="place" id="beach" value="p1" />
-        <label for="beach">Beach</label>
-        <input type="radio" name="place" id="mountain" value="p2" />
-        <label for="mountain">Mountain</label>
+        <p class="js_btnshow2 btnsshow">Choose your preferences:</p>
       </div>
-    </fieldset>
-    <fieldset class="form">
-      <legend>What drink do you prefer?</legend>
-      <div>
-        <input type="radio" name="drink" id="beer" value="p1" />
-        <label for="beer">Beer</label>
-        <input type="radio" name="drink" id="wine" value="p2" />
-        <label for="wine">Wine</label>
-      </div>
-    </fieldset>
-    <fieldset class="form">
-      <legend>What food do you prefer?</legend>
-      <div>
-        <input type="radio" name="food" id="meat" value="p1" />
-        <label for="meat">Meat</label>
-        <input type="radio" name="food" id="vegan" value="p2" />
-        <label for="vegan"> Vegan</label>
-      </div>
-    </fieldset>
-  </form>
-</section>
+      <form class="js_hidden2 formhidden">
+        <h3 class="title_checkOne">Check one choice to meet you better!</h3>
+        <div class="gender1">
+          Interested in:
+          <input
+            type="radio"
+            name="gender"
+            id="women"
+            value="p3"
+            class="js_gender"
+          /><label for="women">Women </label>
+          <input
+            type="radio"
+            name="gender"
+            id="men"
+            value="p4"
+            class="js_gender"
+          /><label for="men">Men </label>
+          <input
+            type="radio"
+            name="gender"
+            id="both"
+            value="p5"
+            class="js_gender"
+          /><label for="both">Both </label>
+        </div>
 
-    
+        <fieldset class="form">
+          <legend>What place do you prefer?</legend>
+          <div class="place1">
+            <input
+              type="radio"
+              name="place"
+              id="beach"
+              value="p1"
+              class="js_place"
+            />
+            <label for="beach">Beach </label>
+            <input
+              type="radio"
+              name="place"
+              id="mountain"
+              value="p2"
+              class="js_place"
+            />
+            <label for="mountain">Mountain</label>
+          </div>
+        </fieldset>
+        <fieldset class="form">
+          <legend>What drink do you prefer?</legend>
+          <div class="drink1">
+            <input
+              type="radio"
+              name="drink"
+              id="beer"
+              value="p1"
+              class="js_drink"
+            />
+            <label for="beer">Beer </label>
+            <input
+              type="radio"
+              name="drink"
+              id="wine"
+              value="p2"
+              class="js_drink"
+            />
+            <label for="wine">Wine</label>
+          </div>
+        </fieldset>
+        <fieldset class="form">
+          <legend>What food do you prefer?</legend>
+          <div class="food1">
+            <input
+              type="radio"
+              name="food"
+              id="meat"
+              value="p1"
+              class="js_food"
+            />
+            <label for="meat">Meat</label>
+            <input
+              type="radio"
+              name="food"
+              id="vegan"
+              value="p2"
+              class="js_food"
+            />
+            <label for="vegan"> Vegan</label>
+          </div>
+        </fieldset>
+      </form>
+    </article>
+
+    <article>
+      <p class="js_btnshow3 btnsshow">Share!</p>
+      <div class="js_hidden3 formhidden">
+        <p class="js_create create">Create your card</p>
+      </div>
+      <p class="alert js_alert"></p>
+    </article>
+  </section>
+
+  <aside class="preview">
+    <h3 class="title_checkOne">Preview your profile!</h3>
+
+    <!--Nueva seccion previsualización-->
+    <section class="card">
+      <div class="contentdata">
+        <div class="preview-age js-age"></div>
+        <div class="preview-email js-email"></div>
+        <div class="preview-quality js-quality"></div>
+        <div class="preview-gender js-gender"></div>
+      </div>
+
+      <div class="preview-name js-name"></div>
+
+      <div
+        class="profile__image js__profile-image"
+        
+      ></div>
+
+      <section class="preview-choose">
+        <div class="preview-beachormontain"></div>
+        <div class="preview-beerordrink"></div>
+        <div class="preview-meetorvegan"></div>
+      </section>
+    </section>
+
+    <div class="end">
+      <p class="reset js_ResetBtn">Reset</p>
+    </div>
+  </aside>
+</main>
+
+    <footer>
+  <p class="vm">VibeMatch © 2025</p>
+
+  <div class="rrss">
+    <a href="www.facebook.com" class="rrss_link"
+      ><i class="fb fa-brands fa-facebook-f fa-1x"></i
+    ></a>
+    <a href="www.twitter.com" class="rrss_link"
+      ><i class="tw fa-brands fa-twitter fa-1x"></i
+    ></a>
+    <a href="www.instagram.com" class="rrss_link"
+      ><i class="fa-brands fa-instagram fa-1x"></i
+    ></a>
+    <img class="logofooter" src="./img/logo2footer.png" alt="logofooter">
+  </p>
+  </footer>
+
+  
+    <script src="./js/main.js"></script>
   </body>
 </html>
